@@ -1,0 +1,36 @@
+School,Games,Wins,Loss,WLpct,SRS,SOS,ConfW,ConfL,HomeW,HomeL,AwayW,AwayL,Pnts,OppPnts,MP,FG,FGA,FGpct,ThreeP,TrheePA,ThreePpct,FT,FTA,FTpct,ORB,TRB,AST,STL,BLK,TOV,PF,YEAR
+
+School    -- School Name
+Games     -- Games Played
+Wins      -- Wins
+Loss      -- Losses
+WLpct     -- Win/Loss Percentage
+SRS       -- Simple Rating Sytem  - A rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average.
+SOS       -- Strength of Schedule - A rating of strength of schedule. The rating is denominated in points above/below average, where zero is average.
+ConfW     -- Conference Wins
+ConfL     -- Conference Losses
+HomeW     -- Home Wins            - Not calculated before 2001
+HomeL     -- Home Losses          - Not calculated before 2001
+AwayW     -- Away Wins            - Not calculated before 2001
+AwayL     -- Away Losses          - Not calculated before 2001
+Pnts      -- Points
+OppPnts   -- Opponent Points
+MP        -- Minutes Played       - Not calculated regularly before 2010
+FG        -- Field Goals
+FGA       -- Field Goal Attempts
+FGPct     -- Field Goal Percentage
+ThreeP    -- Three Point Field Goals
+ThreePA   -- Three Point Field Goal Attempts
+ThreePpct -- Three Point Field Goal Percentage
+FT        -- Free Throws
+FTA       -- Free Throw Attempts
+FTpct     -- Free Throw Percentage
+ORB       -- Offensive Rebounds    - Not calculated before 1997
+TRB       -- Total Rebounds
+AST       -- Assists
+BLK       -- Blocks
+TOV       -- Turnovers
+PF        -- Personal Fouls
+
+Data taken from sports-reference.com -- Sports Reference LLC.
+Complied and reformatted by tylmat44
