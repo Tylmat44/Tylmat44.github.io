@@ -98,4 +98,18 @@ body {
   background-size: 22px 22px;
 }
 
+/* Background Color Textbox1 */
+.tb1 {
+  background-color: #96ffa6;
+  border: 2px solid #008000;
+  width: 230px;
+}
+
+/* Background Color Textbox2 */
+.tb2 {
+  background-color: #a696ff;
+  border: 2px solid #008000;
+  width: 230px;
+}
+
 /*# sourceMappingURL=style.css.map */
