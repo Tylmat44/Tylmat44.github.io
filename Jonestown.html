@@ -31,7 +31,7 @@ tw-story[tags~="time"] {
  background-image:url("Images/time.jpg");
  background-size:contain;
 }
-tw-story[tags~="CA"] {
+tw-story[tags~="ca"] {
  background-image:url("Images/CA.jpg");
  background-size:contain;
 }
@@ -51,9 +51,13 @@ background-color: #000000
 
 </script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="401,101" size="100,100">
 &lt;img src=&quot;C:\Users\Tyler\Desktop\Title.png&quot;&gt;
-[[Start Game-&gt;GameStart]]</tw-passagedata><tw-passagedata pid="2" name="GameStart" tags="city" position="600,98" size="100,100">&lt;body&gt;(set: $temp to 0)(set: $d to 0)It is a cool October day in the heart of Indianapolis.
+(css: &quot;color: red;&quot;)[There are two invisible variables, your relationship with your signifigant other and your loyalty to the church. ALL your choices WILL affect the game, one way or another.]
+
+
+[[Start Game-&gt;GameStart]]</tw-passagedata><tw-passagedata pid="2" name="GameStart" tags="city" position="600,98" size="100,100">
+(set: $temp to 0)(set: $d to 0)It is a cool October day in the heart of Indianapolis.
 You find yourself briskly walking down the street.
-[[Continue walking-&gt;Exposition1]]&lt;/body&gt;</tw-passagedata><tw-passagedata pid="3" name="Exposition1" tags="city" position="800,99" size="100,100">As you continue walking, you see a young woman waving at you.
+[[Continue walking-&gt;Exposition1]]</tw-passagedata><tw-passagedata pid="3" name="Exposition1" tags="city" position="800,99" size="100,100">As you continue walking, you see a young woman waving at you.
 
 You reconize her as:
 (link:&quot;Your wife&quot;)[(set: $girl to 0)(set: $rel to 7)(goto:&quot;next&quot;)]
@@ -74,10 +78,10 @@ You reconize her as:
 
 (elseif: $girl is 1)[Diane gives you a quick peck on the cheek and the two of you continue to the cafe.]&lt;br&gt;
 
-(elseif: $girl is 2)[You and Diane exhnage quick greetings and agree to continue to the cafe]&lt;br&gt;
+(elseif: $girl is 2)[You and Diane exchange quick greetings and agree to continue to the cafe]&lt;br&gt;
 }
 
-**Diane**: &quot;I&#39;m so glad they opened this kind of cafe so close to home!&quot;
+**Diane**: &quot;I&#39;m so glad they opened a desegregated cafe so close to home!&quot;
 
 **You**:
 (link:&quot;This is great, we can go out anytime we want!&quot;)[(set: $rel += 1)(goto:&quot;cafe2&quot;)]
@@ -96,7 +100,7 @@ time skip is to 1960
 
 As you draw closer you see that they seem to be protesting the establishment in a not-so-nice way.
 
-You begin to walk into the cafe and the men start to yell slurs and act aggresivly towards you and Diane.
+You begin to walk into the cafe and the men start to yell slurs and act aggressively towards you and Diane.
 
 (link:&quot;Keep going inside&quot;)[(set: $c to 0)(goto:&quot;cafe3&quot;)]
 (link:&quot;Retaliate&quot;)[(set: $c to 1)(goto:&quot;cafe3&quot;)]
@@ -120,7 +124,7 @@ He walks to your table and asks: &quot;Are you two a couple?&quot;&lt;br&gt;&lt;
 ]&lt;br&gt;
 
 (elseif: $c is 1)[You tell Diane to quickly go into the cafe and you begin to yell at the men outside.&lt;br&gt;
-One aggresively shoves you and you swing and punch him right in the nose&lt;br&gt;
+One aggressively shoves you and you swing and punch him right in the nose&lt;br&gt;
 Three of the other men tackle you and start to beat you until the manager comes out and threatens them with his pistol.&lt;br&gt;&lt;br&gt;
 The crowd scatters like roaches as Diane rushes to your side.&lt;br&gt;
 They help you to your feet and to a table while the manager apologizes and offers you a free meal.&lt;br&gt;&lt;br&gt;&lt;br&gt;
@@ -133,21 +137,21 @@ Both you and Diane oddly look at the man as he asks if you two are a couple.&lt;
 [[No-&gt;no]]
 ]&lt;br&gt;
 
-(elseif: $c is 2)[You decide that its not worth going to the cafe with the mob blocking the enterance. Diane is dissapointed but agrees that it may be better that way.&lt;br&gt;
-The two of you turn around and head towards home. You are stopped by a well dressed man in sunglasses. You put your arm around Diane thinking he will be aggresive but instead he asks if you two are a couple.&lt;br&gt;&lt;br&gt;
+(elseif: $c is 2)[You decide that its not worth going to the cafe with the mob blocking the enterance. Diane is disappointed but agrees that it may be better that way.&lt;br&gt;
+The two of you turn around and head towards home. You are stopped by a well dressed man in sunglasses. You put your arm around Diane thinking he will be aggressive but instead he asks if you two are a couple.&lt;br&gt;&lt;br&gt;
 
 [[Yes-&gt;yes]]&lt;br&gt;
 [[No-&gt;no]]]&lt;br&gt;
 }</tw-passagedata><tw-passagedata pid="9" name="yes" tags="cafe" position="541,253" size="100,100">{
-(if: $girl is 3)[
+(if: $girl is 2)[
 You tell the man that you are a couple and Diane blushes.&lt;br&gt;
 ](else:)[
 You tell the man that you are a couple.&lt;br&gt;
 ]
-The mans smile widens as he tells you that you two are a beatiful couple and people like us could change this land for the better.&lt;br&gt;&lt;br&gt;
+The mans smile widens as he tells you that you two are a beautiful couple and people like us could change this land for the better.&lt;br&gt;&lt;br&gt;
 
 The man introduces himself as Reverend Jim Jones of the Peoples Temple on New Jersey St, not too far from here.&lt;br&gt;
-He explains that his lifes work is dedicated to easing racial tensions in the city and eventually the entire country.&lt;br&gt;
+He explains that his life&#39;s work is dedicated to easing racial tensions in the city and eventually the entire country.&lt;br&gt;
 He is the pastor at his own church and the congregation is filled with all kinds of races and backgrounds&lt;br&gt;&lt;br&gt;
 
 Jones invites you and Diane to join them next Sunday.&lt;br&gt;
@@ -157,7 +161,7 @@ Diane is excited to go but looks to you for your opinion.&lt;br&gt;
 
 (if: $temp is -1)[[[temp-&gt;cafe4]]]
 }</tw-passagedata><tw-passagedata pid="10" name="no" tags="cafe" position="635,382" size="100,100">{
-(if: $girl is not 3)[
+(if: $girl is not 2)[
 You tell the man that you are not a couple and Diane looks upset.&lt;br&gt;
 ](else:)[
 You tell the man that you are not a couple.&lt;br&gt;
@@ -165,7 +169,7 @@ You tell the man that you are not a couple.&lt;br&gt;
 &quot;Oh, my mistake then&quot; the man says, &quot;but it&#39;s still amazing to see you two together.&quot;&lt;br&gt;&lt;br&gt;
 
 He introduces himself as Reverend Jim Jones of the Peoples Temple on New Jersey St, not too far from here.&lt;br&gt;
-He explains that his lifes work is dedicated to easing racial tensions in the city and eventually the entire country.&lt;br&gt;
+He explains that his life&#39;s work is dedicated to easing racial tensions in the city and eventually the entire country.&lt;br&gt;
 He is the pastor at his own church and the congregation is filled with all kinds of races and backgrounds&lt;br&gt;&lt;br&gt;
 
 Jones invites you and Diane to join them next Sunday.&lt;br&gt;
@@ -186,9 +190,9 @@ Sunday rolls around and the two of you head off to church.&lt;br&gt;
 [[Go.-&gt;sunday]]
 ]
 (if: $c is 1)[
-**Jim Jones**: &quot;Oh, thats too bad. I hope to see you there soon anyway.&quot;&lt;br&gt;&lt;br&gt;
+**Jim Jones**: &quot;Oh, that&#39;s too bad. I hope to see you there soon anyway.&quot;&lt;br&gt;&lt;br&gt;
 
-After weeks and weeks of begging, Diane finally convines you to go.&lt;br&gt;
+After weeks and weeks of begging, Diane finally convinces you to go.&lt;br&gt;
 [[Go.-&gt;sunday]]
 ]
 }</tw-passagedata><tw-passagedata pid="12" name="sunday" tags="" position="250,393" size="100,100">You and Diane nervously make your way to the church, not knowing what to expect.
@@ -196,7 +200,7 @@ After weeks and weeks of begging, Diane finally convines you to go.&lt;br&gt;
 You get to the church and enter the sanctuary.
 People rush up to greet you, its perhaps the nicest you&#39;ve ever been treated.
 
-Service begins and reverend Jones begins to preach. The man preaches love and acceptence. You are hyponotized by his persausive way of talking. You never thought you&#39;d love a church service as much as this one.
+Service begins and reverend Jones begins to preach. The man preaches love and acceptance. You are hypnotized by his persuasive way of talking. You never thought you&#39;d love a church service as much as this one.
 
 {
 (if: $girl is 2)[Afterwards, you feel that now is the right time to ask Diane to be your girlfriend.&lt;br&gt;
@@ -211,7 +215,7 @@ She happily accepts and you two head home after this magnificent day.&lt;br&gt;(
 ]
 (set: $convo to 1)
 (if: $rel &lt;= 0 and $d is not 1)[(css: &quot;color: red;&quot;)[Diane says shes tired of your selfishness and decides to leave you.&quot;&lt;br&gt;&lt;br&gt;]
-You say its frowned upon for an African American woman to leave a white man which she replies&lt;br&gt;&lt;br&gt;
+You say its frowned upon for an African-American woman to leave a white man which she replies&lt;br&gt;&lt;br&gt;
 &quot;I&#39;d rather go to jail than to spend any more time with you.&quot;&lt;br&gt;
 (set: $d to 1)
 (set: $n to 1)
@@ -229,7 +233,7 @@ How often do you attend the church?&lt;br&gt;
 ]
 
 (if: $iter is 1 and $n is not 1)[
-(css: &quot;color: red;&quot;)[You have been attending the Peoples Temple $att over the past two years.]&lt;br&gt;&lt;br&gt;
+(css: &quot;color: red;&quot;)[You have been attending the People&#39;s Temple $att over the past two years.]&lt;br&gt;&lt;br&gt;
 Diane is asked to help take care of the small children during some of the services&lt;br&gt;
 Do you:&lt;br&gt;
 
@@ -249,7 +253,7 @@ Walking down the street one afternoon, you see Rev. Jones being harassed by a gr
 (css: &quot;color: red;&quot;)[$msg]&lt;br&gt;&lt;br&gt;
 Diane suggests that we take a trip soon.&lt;br&gt;
 
-(link:&quot;Tell her we dont&#39;t have time nor the money.&quot;)[(set: $iter += 1)(set: $rel -= 1)(set: $msg to &quot;Diane is dissapointed but gets over it eventually.&quot;)(goto:&quot;timehopLoop&quot;)]&lt;br&gt;
+(link:&quot;Tell her we don&#39;t have time nor the money.&quot;)[(set: $iter += 1)(set: $rel -= 1)(set: $msg to &quot;Diane is disappointed but gets over it eventually.&quot;)(goto:&quot;timehopLoop&quot;)]&lt;br&gt;
 (link:&quot;Agree excitedly.&quot;)[(set: $rel += 1)(set: $iter += 1)(set: $msg to &quot;The two of you take a nice, relaxing weekend trip to Lake Michigan.&quot;)(goto:&quot;timehopLoop&quot;)]&lt;br&gt;
 ]
 
@@ -257,8 +261,8 @@ Diane suggests that we take a trip soon.&lt;br&gt;
 (css: &quot;color: red;&quot;)[$msg]&lt;br&gt;&lt;br&gt;
 You spot a nice house for sale in the newspaper. Diane seems to be excited about the idea.&lt;br&gt;
 
-(link:&quot;Buy the house.&quot;)[(set: $iter += 1)(set: $rel += 2)(set: $msg to &quot;You buy the quaint little house in the suberbs. &quot;)(goto:&quot;timehopLoop&quot;)]&lt;br&gt;
-(link:&quot;Don&#39;t buy the house.&quot;)[(set: $rel -= 2)(set: $iter += 1)(set: $msg to &quot;You tell Diane that our aparment is all we need.&quot;)(goto:&quot;timehopLoop&quot;)]&lt;br&gt;
+(link:&quot;Buy the house.&quot;)[(set: $iter += 1)(set: $rel += 2)(set: $msg to &quot;You buy the quaint little house in the suburbs. &quot;)(goto:&quot;timehopLoop&quot;)]&lt;br&gt;
+(link:&quot;Don&#39;t buy the house.&quot;)[(set: $rel -= 2)(set: $iter += 1)(set: $msg to &quot;You tell Diane that our apartment is all we need.&quot;)(goto:&quot;timehopLoop&quot;)]&lt;br&gt;
 ]
 
 (if: $iter is 5 and $n is not 1)[
@@ -271,10 +275,10 @@ Jones catches you one day after service and asks you to take over the youth Sund
 
 (if: $iter is 6 and $n is not 1)[
 (css: &quot;color: red;&quot;)[$msg]&lt;br&gt;&lt;br&gt;
-You overhear people critisizing the People&#39;s Temple at work.&lt;br&gt;
+You overhear people criticizing the People&#39;s Temple at work.&lt;br&gt;
 
 (link:&quot;Stick up for your church.&quot;)[(set: $iter to 99)(set: $chch += 1)(set: $msg to &quot;You tell them that the church is doing good work and everyone stops and stares at you.&quot;)(goto:&quot;timehopLoop&quot;)]&lt;br&gt;
-(link:&quot;Say nothing&quot;)[(set: $chch += 1)(set: $iter += 1)(set: $msg to &quot;You keep quit as their critisizm continues.&quot;)(goto:&quot;timehopLoop&quot;)]&lt;br&gt;
+(link:&quot;Say nothing&quot;)[(set: $chch += 1)(set: $iter += 1)(set: $msg to &quot;You keep quit as their criticism continues.&quot;)(goto:&quot;timehopLoop&quot;)]&lt;br&gt;
 ]
 
 (if: $iter is 99 and $n is not 1)[
@@ -282,15 +286,15 @@ You overhear people critisizing the People&#39;s Temple at work.&lt;br&gt;
 Your boss pulls you into his office for the comment made earlier the week and tells you that you&#39;re fired.&lt;br&gt;
 
 (link:&quot;Go home and blame Diane for making you join that stupid church.&quot;)[(set: $iter to 7)(set: $rel -=3)(set: $msg to &quot;You go home and lose your temper. Diane leaves for the night.&quot;)(goto:&quot;timehopLoop&quot;)]&lt;br&gt;
-(link:&quot;Take a long drive home to cool off.&quot;)(set: $iter to 7)(set: $msg to &quot;You take the long way home and realise God is going to help you through this.&quot;)(goto:&quot;timehopLoop&quot;)]&lt;br&gt;
-
+(link:&quot;Take a long drive home to cool off.&quot;)[(set: $iter to 7)(set: $msg to &quot;You take the long way home and realize God is going to help you through this.&quot;)(goto:&quot;timehopLoop&quot;)]&lt;br&gt;
+]
 
 (if: $iter is 7 and $n is not 1)[
 (css: &quot;color: red;&quot;)[$msg]&lt;br&gt;&lt;br&gt;
 Diane expresses that she wants a child.&lt;br&gt;
 
 (link:&quot;Agree we should have a child.&quot;)[(set: $iter += 1)(set: $rel -= 1)(set: $msg to &quot;Diane soon remembers that we&#39;re still technically not allowed to be married and gets upset.&quot;)(goto:&quot;timehopLoop&quot;)]&lt;br&gt;
-(link:&quot;Let her understand that now isn&#39;t the right time.&quot;)[(set: $iter += 1)(set: $msg to &quot;You tell Diane that we&#39;re techincally not allowed to be married and she understands.&quot;)(goto:&quot;timehopLoop&quot;)]&lt;br&gt;
+(link:&quot;Let her understand that now isn&#39;t the right time.&quot;)[(set: $iter += 1)(set: $msg to &quot;You tell Diane that we&#39;re technically not allowed to be married and she understands.&quot;)(goto:&quot;timehopLoop&quot;)]&lt;br&gt;
 ]
 
 (if: $iter is 8 and $n is not 1)[
@@ -314,7 +318,7 @@ You and Diane decide to go over to Chicago and get married there.
 (if: $convo is 1)[
 One Sunday after church, Rev. Jones asks you to meet him in his office.&lt;br&gt;&lt;br&gt;
 
-**Jim Jones**: &quot;So my family and I are planning on spending a couple of months in Brazil in hopes to spread our outreach there. I, of course, need people to run things here while I&#39;m gone. I already have an interm pastor in place but I need someone to run the day to day here.&quot;&lt;br&gt;&lt;br&gt;
+**Jim Jones**: &quot;So my family and I are planning on spending a couple of months in Brazil in hopes to spread our outreach there. I, of course, need people to run things here while I&#39;m gone. I already have an interim pastor in place but I need someone to run the day to day here.&quot;&lt;br&gt;&lt;br&gt;
 
 &quot;You have been very active and loyal these past few years, and I&#39;d like you to take over that position.&quot;&lt;br&gt;
 (link:&quot;It would be an honor.&quot;)[(set: $chch += 3)(set: $convo to 0)(set: $state to 1)(goto:&quot;jonesbrazil&quot;)]&lt;br&gt;
@@ -326,7 +330,7 @@ One Sunday after church, Rev. Jones asks you to meet him in his office.&lt;br&gt
 (if: $chch &gt;= 13)[The following Sunday,](else:)[(set: $state to 2)One Sunday,]
  Reverend Jones stands before the church and announces that he and his family is leaving for a extended trip to Brazil in order to widen the ministry.&lt;br&gt;&lt;br&gt;
 
-He announces the interm pastor and the person who would take over day to day operations(if: $chch &gt;= 13)[, which is you.](else:)[.]&lt;br&gt;&lt;br&gt;
+He announces the interim pastor and the person who would take over day to day operations(if: $chch &gt;= 13)[, which is you.](else:)[.]&lt;br&gt;&lt;br&gt;
 ]
 
 (if: $chch &lt; 10 or $convo is 0)[
@@ -337,13 +341,13 @@ Jones approaches you after service and asks you to speak to the NAACP council ne
 [[Continue-&gt;todo]]
 }</tw-passagedata><tw-passagedata pid="16" name="jonescomeback" tags="church" position="1066,426.5" size="100,100">You (if: $d is 0)[and Diane ]wake up bright and early, excited to see Reverend Jones after his trip to Brazil.&lt;br&gt;
 
-You meet with him before service to discuss your tasks while her was gone.
+You meet with him before service to discuss your tasks while he was gone.
 
 As you talk to him, you notice something is a bit, off, about the pastor. He seems to be staring off into the distance, not really paying much attention to what you say.
 
 [[Ask him if he&#39;s okay-&gt;comeback2]]</tw-passagedata><tw-passagedata pid="17" name="Jonestowndis" tags="church" position="521,897.5" size="100,100">As time goes on, The reverend gets more paranoid.&lt;br&gt;
 His vision now is to start a new &quot;Eden&quot; in the jungles of Guyana.&lt;br&gt;
-He claims that this counrty has turned to sinful ways and that we must take ourselves and our families to the safe haven in South America.&lt;br&gt;&lt;br&gt;&lt;br&gt;
+He claims that this country has turned to sinful ways and that we must take ourselves and our families to the safe haven in South America.&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 Jones urges that everyone should pack up and leave immediately.&lt;br&gt;&lt;br&gt;
 
@@ -379,11 +383,11 @@ Jones asked you to go in his place to an NAACP meeting.&lt;br&gt;
 (if: $temp is -1)[[[todo-&gt;rally]][[meeting-&gt;meeting]][[nomeeting-&gt;nomeeting]][[restaraunt-&gt;reso]][[comback-&gt;jonescomeback]]]</tw-passagedata><tw-passagedata pid="20" name="rally" tags="" position="656,624.5" size="100,100">{(set: $rand to (random: 1,2))
 (if: $rand is 1)[
 The rally turns out great, you represent your church well.&lt;br&gt;
-(set: $chch to += 1)
+(set: $chch += 1)
 ]
 (if: $rand is 2)[
 A bunch of protestors show up to the rally and it doesn&#39;t go well.&lt;br&gt;
-(set: $chch to -= 1)
+(set: $chch -= 1)
 ]
 
 [[Back to list.-&gt;todo]]
@@ -401,37 +405,37 @@ Audible gasps can be heard throughout the audience.
 
 [[Continue listening.-&gt;comeback3]]</tw-passagedata><tw-passagedata pid="22" name="comeback3" tags="church" position="1362,443.5" size="100,100">**Jones**: &quot;Don&#39;t be alarmed my people, for I have found us a new home.&quot;
 
-&quot;There is a place in the hills of California that will be safe from this apoctalyptic nightmare.&quot;
+&quot;There is a place in the hills of California that will be safe from this apocalyptic nightmare.&quot;
 
 &quot;We must make preparations to move the church as soon as we possibly can!&quot;
 
-By now, everyone is visibally confused and the hushed whispers across the congregation turn into frantic babblings.
+By now, everyone is visibly confused and the hushed whispers across the congregation turn into frantic babbling.
 
 Jones takes his leave from the pulpit and retreats to his office.
 
 [[Go to his office.-&gt;comeback4]]</tw-passagedata><tw-passagedata pid="23" name="comeback4" tags="church" position="1395,626.5" size="100,100">You get up and go to the reverends office. 
 You bang on the door but he does not answer.
 
-You return the the sanctuary where you find that mayhem has ensued.
+You return to the sanctuary where you find that mayhem has ensued.
 
 You (if: $d is 0)[find Diane and the two of you ]go home to ponder what has happened.
 
 [[Continue-&gt;move]]</tw-passagedata><tw-passagedata pid="24" name="comeback5" tags="ca" position="559,777.5" size="100,100">The weeks and months roll by and things begin to get a little strange.
 
-You notice that the tone of Jones&#39;s sermons are shifting. What were once love and peace messages are turning to hate filled symbolisms of this country and capitalism.
+You notice that the tone of Jones&#39;s sermons are shifting. What were once love and peace messages are turning to hate filled symbolism of this country and capitalism.
 
-He keeps throwing out socialistic ideals and anti-american propaganda.
+He keeps throwing out socialistic ideals and anti-American propaganda.
 
-He even goes as far as discrediting Christianity as a whole, claiming that the bible is &quot;a tool to opress women and non-whites.&quot;
+He even goes as far as discrediting Christianity as a whole, claiming that the bible is &quot;a tool to oppress women and non-whites.&quot;
 
-[[Continue-&gt;comeback6]]</tw-passagedata><tw-passagedata pid="25" name="comeback6" tags="church" position="388,769.5" size="100,100">You notice this change but his persuasive way of speaking leads you to beleive most of what his saying.
+[[Continue-&gt;comeback6]]</tw-passagedata><tw-passagedata pid="25" name="comeback6" tags="church" position="388,769.5" size="100,100">You notice this change but his persuasive way of speaking leads you to believe most of what his saying.
 
 [[Keep coming back.-&gt;comeback7]]
-&lt;strike&gt;Get out of this crazy place.&lt;/strike&gt;</tw-passagedata><tw-passagedata pid="26" name="comeback7" tags="" position="212,813.5" size="100,100">You cannot seem to break his persuasive hold and keep coming back to hear his propaganda week after week.
+&lt;strike&gt;Get out of this crazy place.&lt;/strike&gt;</tw-passagedata><tw-passagedata pid="26" name="comeback7" tags="ca" position="212,813.5" size="100,100">You cannot seem to break his persuasive hold and keep coming back to hear his propaganda week after week.
 
-Over time, the reverened pushes his outreach and ideals to locations in Los Angeles and San Fracissco.
+Over time, the reverend pushes his outreach and ideals to locations in Los Angeles and San Francisco.
 
-The People&#39;s Temple starts to receive more crisisism that it did in Indiana.
+The People&#39;s Temple starts to receive more criticism that it did in Indiana.
 
 [[Continue-&gt;Jonestowndis]]</tw-passagedata><tw-passagedata pid="27" name="move" tags="church" position="1247,734.5" size="100,100">After a very solemn week, you return to church the next Sunday.
 
@@ -466,7 +470,7 @@ Following the service Jones asks you and Diane if you two are joining them in Ca
 **Jones**: &quot;Great, I will see you there.&quot;&lt;br&gt;
 Jones takes his leave&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
-**Diane**: &quot;How could you make that descision without me?&quot;&lt;br&gt;
+**Diane**: &quot;How could you make that decision without me?&quot;&lt;br&gt;
 
 **You**: &quot;I&#39;m sorry dear, but we have no other choice&quot;&lt;br&gt;
 
@@ -505,10 +509,10 @@ Jones takes his leave&lt;br&gt;&lt;br&gt;&lt;br&gt;
 }</tw-passagedata><tw-passagedata pid="32" name="nomove" tags="house" position="918,736.5" size="100,100">{
 (if: $d is 0)[
 You decide not to move to California with the temple.&lt;br&gt;
-You and Diane spend the rest of your life in Indianapolis, rasising three beautiful children.&lt;br&gt;&lt;br&gt;
+You and Diane spend the rest of your life in Indianapolis, raising three beautiful children.&lt;br&gt;&lt;br&gt;
 
 You often wonder what your life would have been life if you moved to California&lt;br&gt;
-But as time passes you foroget that Jim Jones ever came into your life.
+But as time passes you forget that Jim Jones ever came into your life.
 ]
 
 
@@ -517,8 +521,10 @@ You decide not to move to California with the temple.&lt;br&gt;
 You spend the rest of your life in Indianapolis, get remarried, and raise three beautiful children.&lt;br&gt;&lt;br&gt;
 
 You often wonder what your life would have been life if you moved to California&lt;br&gt;
-But as time passes you foroget that Jim Jones ever came into your life.
-]
+But as time passes you forget that Jim Jones ever came into your life.
+]&lt;br&gt;&lt;br&gt;
+
+(css: &quot;color: red;&quot;)[THE END]
 }</tw-passagedata><tw-passagedata pid="33" name="j" tags="house" position="652,914.5" size="100,100">{
 (if: $d is 0)[
 You tell your wife that we should really go.&lt;br&gt;
@@ -540,7 +546,7 @@ While working in the fields, you discover a hand gun that one of the armed guard
 
 [[Turn it in to officials.-&gt;turnin]]
 [[Hide it under your coat.-&gt;hideit]]</tw-passagedata><tw-passagedata pid="35" name="roof" tags="church" position="670,1223.5" size="100,100">You begin roof work on the church.
-You overhear Jones talking to some guards about a secret mission inovlving the senators impending visit.
+You overhear Jones talking to some guards about a secret mission involving the senators impending visit.
 
 You realize they&#39;re plotting to murder the senator.
 
@@ -556,11 +562,11 @@ You go to the NAACP meeting and take notes for pastor Jones.&lt;br&gt;
 (set: $rand to (random: 1,2))
 (if: $rand is 1)[
 You go to the NAACP meeting and take notes for pastor Jones.&lt;br&gt;
-(set: $chch to += 1)
+(set: $chch += 1)
 ]
 (if: $rand is 2)[
 A council member calls on you to speak but you stumble on your words.&lt;br&gt;
-(set: $chch to -= 1)
+(set: $chch -= 1)
 ]
 
 [[Back to list.-&gt;todo]]
@@ -569,28 +575,30 @@ A council member calls on you to speak but you stumble on your words.&lt;br&gt;
 
 [[Continue-&gt;jonescomeback]] </tw-passagedata><tw-passagedata pid="38" name="reso" tags="" position="779,597.5" size="100,100">{(set: $rand to (random: 1,2))
 (if: $rand is 1)[
-The grand openeing was a success!&lt;br&gt;
-(set: $chch to += 1)
+The grand opening was a success!&lt;br&gt;
+(set: $chch += 1)
 ]
 (if: $rand is 2)[
 A bunch of protestors show up to the grand opening and it doesn&#39;t go well.&lt;br&gt;
-(set: $chch to -= 1)
+(set: $chch -= 1)
 ]
 
 [[Back to list.-&gt;todo]]
 }</tw-passagedata><tw-passagedata pid="39" name="nojtown" tags="ca" position="367,1075.5" size="100,100">You and Diane decide to not follow the cult to Jonestown.
 
-You see on the news about the village years later and thank the God above for no allowing you to move.</tw-passagedata><tw-passagedata pid="40" name="top" tags="church" position="891,1087.5" size="100,100">Jones gathers you and a few of his guards for a secret mission.
+You see on the news about the village years later and thank the God above for no allowing you to move.
+
+(css: &quot;color: red;&quot;)[THE END]</tw-passagedata><tw-passagedata pid="40" name="top" tags="church" position="891,1087.5" size="100,100">Jones gathers you and a few of his guards for a secret mission.
 
 He wants you to assassinate the California senator that is coming in a few weeks.
 
 [[Agree to the mission-&gt;agree]]
 [[Tell him your not a murderer-&gt;disagree]]</tw-passagedata><tw-passagedata pid="41" name="nottop" tags="village" position="703,1101.5" size="100,100">Jones gives you the first choice in selecing something to do for the day.
 
-[[Harvest the fields-&gt;harvest]]
-[[Fix the roof on the temple-&gt;roof]]</tw-passagedata><tw-passagedata pid="42" name="turnin" tags="village" position="332,1300.5" size="100,100">You turn the weapon into the guards and they thank you and quickly take it inside.
+[[Harvest the fields.-&gt;harvest]]
+[[Fix the roof on the temple.-&gt;roof]]</tw-passagedata><tw-passagedata pid="42" name="turnin" tags="village" position="332,1300.5" size="100,100">You turn the weapon into the guards and they thank you and quickly take it inside.
 (set: $g to 0)
-[[Contintue-&gt;secret]]</tw-passagedata><tw-passagedata pid="43" name="hideit" tags="village" position="499,1292.5" size="100,100">You quickly stash the gun under your coat and no one notices. You quickly get back to your work.
+[[Continue-&gt;secret]]</tw-passagedata><tw-passagedata pid="43" name="hideit" tags="village" position="499,1292.5" size="100,100">You quickly stash the gun under your coat and no one notices. You quickly get back to your work.
 (set: $g to 1)
 [[Continue-&gt;secret]]</tw-passagedata><tw-passagedata pid="44" name="secret" tags="village" position="417,1670.5" size="100,100">Months later you are awoken in the middle of the night.
 The guards are yelling to form single file lines.
@@ -602,7 +610,7 @@ You notice the guards are acting a bit more frantic this time.
 The guards begin handing out the cyanide laced drinks. In about 30 seconds some people ahead of you start dropping like flies.
 
 
-[[You realize this is NOT a drill.-&gt;notadrill]]</tw-passagedata><tw-passagedata pid="45" name="notadrill" tags="village" position="706,1779.5" size="100,100">You quickly realise this is not a drill. You have to act fast.
+[[You realize this is NOT a drill.-&gt;notadrill]]</tw-passagedata><tw-passagedata pid="45" name="notadrill" tags="village" position="706,1779.5" size="100,100">You quickly realize this is not a drill. You have to act fast.
 
 [[Drink it.-&gt;end]]
 [[Sneak away.-&gt;sneak2]]</tw-passagedata><tw-passagedata pid="46" name="mission" tags="" position="625,1387.5" size="100,100">You take note of the date of the mission and sneak through the woods to the airfield the day it happens.
@@ -613,13 +621,15 @@ You notice a jeep in the distance that driven by the guards.
 [[Jump out and warn the senator.-&gt;warn]]
 [[Stay hidden in the bushes.-&gt;nowarn]]</tw-passagedata><tw-passagedata pid="47" name="nomission" tags="" position="818,1386.5" size="100,100">You choose not to spy on the mission but you keep in mind the things you hear.
 
-[[Continue-&gt;secret2]]</tw-passagedata><tw-passagedata pid="48" name="warn" tags="airstrip" position="572,1534.5" size="100,100">You jump out and tell the senator whats about to happen.
+[[Continue-&gt;secret2]]</tw-passagedata><tw-passagedata pid="48" name="warn" tags="airstrip" position="572,1534.5" size="100,100">You jump out and tell the senator what&#39;s about to happen.
 
-The senator and his reporters manage to reatreat to the plane as the guards begin to fire.
+The senator and his reporters manage to retreat to the plane as the guards begin to fire.
 
 One of the bullets manages to hit you.
 
-As you fade into the darkness, you wonder what let to this untimely end.</tw-passagedata><tw-passagedata pid="49" name="nowarn" tags="airstrip" position="700,1537.5" size="100,100">You choose not to warn the senator.
+As you fade into the darkness, you wonder what let to this untimely end.
+
+(css: &quot;color: red;&quot;)[THE END]</tw-passagedata><tw-passagedata pid="49" name="nowarn" tags="airstrip" position="700,1537.5" size="100,100">You choose not to warn the senator.
 
 You step back and one of the guards manages to grab you in a chokehold.
 
@@ -627,7 +637,9 @@ He has been following you since you left the village.
 
 He has the full authority to execute you on the spot.
 
-As you fade into the darkness, you wonder what let to this untimely end.</tw-passagedata><tw-passagedata pid="50" name="agree" tags="church" position="1129,1240.5" size="100,100">The day comes to assassinate the senator.
+As you fade into the darkness, you wonder what let to this untimely end.
+
+(css: &quot;color: red;&quot;)[THE END]</tw-passagedata><tw-passagedata pid="50" name="agree" tags="church" position="1129,1240.5" size="100,100">The day comes to assassinate the senator.
 
 You and a group of guards load up to make your way to the airfield.
 
@@ -646,9 +658,11 @@ You know since the mission just happened, this cannot be a drill.
 (if: $d is o)[Your family is](else:)[You are] handed the cyanide laced cup of drink.
 
 [[Drink it.-&gt;end]]
-[[Sneak away.-&gt;sneak]]</tw-passagedata><tw-passagedata pid="53" name="end" tags="church" position="1217,2008.5" size="100,100">You drink the poisoness fluid, falling for the cults beliefs.
+[[Sneak away.-&gt;sneak]]</tw-passagedata><tw-passagedata pid="53" name="end" tags="church" position="1217,2008.5" size="100,100">You drink the poisonous fluid, falling for the cults beliefs.
 
-As you fade into darkness, you ponder the choices that lead you to this untimely demise.</tw-passagedata><tw-passagedata pid="54" name="sneak" tags="village" position="985,1763.5" size="100,100">{
+As you fade into darkness, you ponder the choices that lead you to this untimely demise.
+
+(css: &quot;color: red;&quot;)[THE END]</tw-passagedata><tw-passagedata pid="54" name="sneak" tags="village" position="985,1763.5" size="100,100">{
 (if: $d is 0)[You grab your family and being to walk away.&lt;br&gt;
 With all the commotion you manage to make it out of your building and to the forest before a guard notices you.&lt;br&gt;
 
@@ -662,7 +676,9 @@ As you fade into darkness, you ponder the choices that lead you to this untimely
 You make it to the edge of the forest before another guard opens fire on you.&lt;br&gt;&lt;br&gt;
 As you fade into darkness, you ponder the choices that lead you to this untimely demise.
 ]
-}</tw-passagedata><tw-passagedata pid="55" name="sneak2" tags="village" position="817,1987.5" size="100,100">{
+}
+
+(css: &quot;color: red;&quot;)[THE END]</tw-passagedata><tw-passagedata pid="55" name="sneak2" tags="village" position="817,1987.5" size="100,100">{
 (if: $d is 0)[You grab your stashed weapon and your family and being to walk away.&lt;br&gt;
 With all the commotion you manage to make it out of your building and to the forest before a guard notices you.&lt;br&gt;
 
@@ -695,7 +711,9 @@ It takes a while to get adjusted back to life, and things get somewhat normal.&l
 You still wonder how one man could lead 900 people into ending their lives.&lt;br&gt;&lt;br&gt;
 And you will never forget how that was almost you.
 ]
-}</tw-passagedata><tw-passagedata pid="57" name="shoot" tags="village" position="1117,1403.5" size="100,100">You take your shot at the senator, killing him.
+}
+
+(css: &quot;color: red;&quot;)[THE END]</tw-passagedata><tw-passagedata pid="57" name="shoot" tags="village" position="1117,1403.5" size="100,100">You take your shot at the senator, killing him.
 
 You and the other guards make your way back to the temple, where chaos is ensuing.
 
@@ -707,9 +725,11 @@ Jones tells you that this is the plan all along, and the last thing to do is to 
 The guard next to you does it instead.
 
 You all drive away to an open field.
-The guards say they have executive athority to execute anyone who compromises the mission.
+The guards say they have executive authority to execute anyone who compromises the mission.
 
-As you fade into darkness, you ponder the choices that lead you to this untimely demise.</tw-passagedata><tw-passagedata pid="59" name="es" tags="church" position="1053,1553.5" size="100,100">You carefully line up your shot as Jones begins to shout his last rights in some kind of strange ritual.
+As you fade into darkness, you ponder the choices that lead you to this untimely demise.
+
+(css: &quot;color: red;&quot;)[THE END]</tw-passagedata><tw-passagedata pid="59" name="es" tags="church" position="1053,1553.5" size="100,100">You carefully line up your shot as Jones begins to shout his last rights in some kind of strange ritual.
 You fire, killing Jones.
 
 In a last ditch effort, you take out as many guards as you can and escape the room.
@@ -725,15 +745,19 @@ One of the guards hands out cups filled with cyanide laced drinks.
 
 [[Drink.-&gt;end]]</tw-passagedata><tw-passagedata pid="61" name="end2" tags="church" position="1413,1553.5" size="100,100">You refuse to shoot Jones.
 
-He takes the gun from you, explaims he has no time for foolishness, and shoots you instead.
+He takes the gun from you, explains he has no time for foolishness, and shoots you instead.
 
-As you fade into darkness, you ponder the choices that lead you to this untimely demise.</tw-passagedata><tw-passagedata pid="62" name="safety2" tags="village" position="1201,1716.5" size="100,100">You keep running until you can&#39;t run anymore.
+As you fade into darkness, you ponder the choices that lead you to this untimely demise.
+
+(css: &quot;color: red;&quot;)[THE END]</tw-passagedata><tw-passagedata pid="62" name="safety2" tags="village" position="1201,1716.5" size="100,100">You keep running until you can&#39;t run anymore.
 
 Days later you find rescue and they take you back to the United States where you are arrested in connection with the murder of the senator.
 
 As you lie in your jail cell, You wonder how one man could lead 900 people into ending their lives, including your wife and kids.
 
-And you will never forget how that was almost you.</tw-passagedata></tw-storydata>
+And you will never forget how that was almost you.
+
+(css: &quot;color: red;&quot;)[THE END]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
