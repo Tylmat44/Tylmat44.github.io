@@ -869,3 +869,28 @@ body {
 				 1px -1px 0 #000;
 				-1px -1px 0 #000;
 }
+
+ /* The alert message box */
+.alert {
+
+  background-color: #F0C808; /* Red */
+  color: #2D2D2A;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+} 
