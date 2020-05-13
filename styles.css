@@ -1,0 +1,896 @@
+
+/*
+====================================================
+
+* 	[Master Stylesheet]
+	
+	Theme Name :  
+	Version    :  
+	Author     :  
+	Author URI :  
+
+====================================================
+
+	TOC
+	
+	1. PRIMARY STYLES
+	2. COMMONS FOR PAGE DESIGN
+	3. INTRO SECTION
+		HEADER 
+		INTRO 
+	4. ABOUT SECTION
+	5. EXPERIENCE SECTION
+	6. PORFOLIO SECTION
+	7. EDUCATION SECTION
+	8. FOOTER
+	
+	Color Scheme
+	red - #AD332E
+	slate grey- #28464B
+	eggshell - #D3D0CB
+	tan - #AF9164
+	black - #2D2D2A
+
+====================================================
+
+
+/* ---------------------------------
+1. PRIMARY STYLES
+--------------------------------- */
+
+html{ font-size: 100%; height: 100%; overflow-x: hidden; margin: 0px;  padding: 0px; touch-action: manipulation; }
+
+
+body{ font-size: 16px; font-family: 'Poppins', serif; width: 100%; height: 100%; margin: 0; font-weight: 400;
+	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; word-wrap: break-word; 
+	color: #333; }
+
+h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, inpot, button{ margin: 0; padding: 0; }
+
+h1,h2,h3,h4,h5,h6{ line-height: 1.5; font-weight: inherit; }
+
+h1,h2,h3{ font-family: 'Poppins', cursive; }
+
+p{ line-height: 1.6; font-size: 1em; font-weight: 400; color: #777; }
+
+h1{ font-size: 4em; line-height: 1; }
+h2{ font-size: 2.2em; line-height: 1.1; }
+h3{ font-size: 1.8em; }
+h4{ font-size: 1.3em; }
+h5{ font-size: 1em; }
+h6{ font-size: .9em; letter-spacing: 1px; }
+
+a, button{ display: inline-block; text-decoration: none; color: inherit; line-height: 1; 
+	-webkit-transition: all .25s ease-in-out; transition: all .25s ease-in-out; }
+
+a:focus, a:active, a:hover,
+button:focus, button:active, button:hover,
+a b.light-color:hover{ text-decoration: none; color: #AD332E; }
+
+b{ font-weight: 600; }
+
+img{ width: 100%; }
+
+li{ list-style: none; display: inline-block; }
+
+span{ display: inline-block; }
+
+button{ outline: 0; border: 0; background: none; cursor: pointer; }
+
+
+.icon{ font-size: 1.1em; display: inline-block; line-height: inherit; }
+
+[class^="icon-"]:before, [class*=" icon-"]:before{ line-height: inherit; }
+
+b.max-bold{ font-weight: 700; }
+
+/* Used for the popup information for courses */
+.hoverbutton{ background-color: #AD332E; }
+
+
+/* ---------------------------------
+2. COMMONS FOR PAGE DESIGN
+--------------------------------- */
+
+.section{ padding: 100px 0 50px; border-bottom: 1px solid #ddd; }
+
+.section .heading{ margin-bottom: 60px; }
+
+.section .heading:before{ content:''; height: 10px; width: 50px; border-radius: 5px;
+	margin-bottom: 20px; display: block; background: #28464B; }
+	
+.margin-t-10{ margin-top: 10px; }
+
+.margin-b-30{ margin-bottom: 30px; }
+.margin-b-50{ margin-bottom: 50px; }
+
+.margin-tb-30{ margin-top: 30px; margin-bottom: 30px; }
+
+.font-yellow{ color: #FFA600; }
+
+.font-beige{ color: #d8c99b; }
+
+.font-eggshell{ color: #D3D0CB; }
+
+.font-semi-white{ color: #ddd; }
+
+.font-lite-black{ color: #999; }
+
+.font-red{ color: #AD332E; }
+
+
+
+/* ---------------------------------
+3. INTRO SECTION
+--------------------------------- */
+
+.intro-section{ padding: 50px 0; position: relative; background-size: cover; 
+	z-index: 1;background-image: url(../../images/slider-3-1920x1080.jpg); }
+
+.intro-section:before{ content:''; z-index: -1; position: absolute; top: 0; bottom: 0; left: 0; 
+	right: 0; background: rgba(0,0,0, .2); }
+
+	
+/* HEADER */
+
+.intro-section .heading-wrapper{ border-radius: 5px; padding: 30px 40px 20px; margin-bottom: 50px;
+	background: #273e47; color: #fff; }
+
+.intro-section .info{ margin-bottom: 10px; }
+
+.intro-section .info .icon{ float: left; font-size: 30px; }
+
+.intro-section .info .right-area{ margin-left: 45px; }
+
+
+/* INTRO */
+
+.intro{ color: #fff; }
+
+.intro .profile-img{ max-width: 400px; border-radius: 5px; overflow: hidden; }
+
+.intro .information > li{ display: block; margin: 5px 0; }
+
+.intro .social-icons > li > a{ height: 35px; line-height: 35px; width: 35px; border-radius: 20px; 
+	overflow: hidden; z-index: 1; position: relative; margin: 0 5px 5px; text-align: center;
+	background: #28464B; color: #D3D0CB; }
+
+.intro .social-icons > li > a:after{ content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+	top: 0; z-index: -1; border-radius: 20px; background: #AF9164;; 
+	-webkit-transition: all .2s ease; transition: all .2s ease;
+	-webkit-transform: scale(0); transform: scale(0); }
+
+.intro .social-icons > li > a:hover:after{ -webkit-transform: scale(1); transform: scale(1); }
+
+
+.intro .downlad-btn{ padding: 15px 30px; border-radius: 4px; float: right; margin-top: 30px;
+	box-shadow: inset 0 0px 4px rgba(0,0,0,.3); background: #273e47; color: #fff; 
+	-webkit-transition: all .2s ease; transition: all .2s ease; }
+
+.intro .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: translateY(-4px); }
+
+
+
+/* ---------------------------------
+4. ABOUT SECTION
+--------------------------------- */
+
+.radial-progress{ position: relative; max-width: 200px; margin: 0 auto; }
+
+.radial-progress .progressbar-text{ font-size: 2.2em; font-weight: 500; 
+	padding-bottom: 25px!important; color: #333!important; }
+
+.radial-progress .progressbar-text:after{ content:'%'; }
+
+.radial-progress .progress-title{ position: absolute; top: 50%; left: 50%; width: 100%;
+	letter-spacing: 0; text-align: center; transform: translate(-50%, 15px); color: #777; }
+
+	
+
+/* ---------------------------------
+5. EXPERIENCE SECTION
+--------------------------------- */
+
+.experience .list > li{ display: block; position: relative; margin-bottom: 10px; padding-left: 20px; }
+
+.experience .list > li:before{ content: ''; position: absolute; top: 50%; left: 0; height: 10px; 
+	width: 10px; margin-top: -5px; display: block; border-radius: 10px; border: 2px solid #555; }
+
+	
+
+/* ---------------------------------
+6. PORFOLIO SECTION
+--------------------------------- */
+
+.portfolio-section{ position: relative; }
+
+.portfolio-section .portfolioFilter{ margin-top: 60px; color: #666; }
+
+.portfolio-section .portfolioFilter a{ margin: 10px 10px 0 0; }
+
+.portfolio-section .portfolioFilter a.current{ color: #AD332E; }
+
+.portfolio-section .portfolioContainer{ margin-left: -15px; margin-right: -15px; }
+
+.portfolio-section .p-item{ width: 25%; padding: 0 7.5px 0px; margin-top: 15px; }
+
+.portfolio-section .p-item a{ display: inline-block; position: relative; }
+
+
+	
+/* ---------------------------------
+7. EDUCATION SECTION
+--------------------------------- */
+
+.education-wrapper{ position: relative; }
+
+.education-wrapper:after{ content:''; position: absolute; top: 8px; bottom: 0; left: -51px;
+	width: 2px; background: #ccc; }
+
+.education-wrapper .education{ position: relative; }
+
+.education-wrapper .education:after{ content:''; position: absolute; top: 8px; left: -58px; width: 16px; 
+	height: 16px; border-radius: 10px; z-index: 1;
+	box-shadow: 0 0 0 8px rgba(255,0,0, .6); background: #000000; }
+	
+	
+	
+/* ---------------------------------
+8. FOOTER
+--------------------------------- */
+
+.copyright{ text-align: center; padding: 30px 0; background: #2D2D2A; }
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #2D2D2A;
+  overflow: visible;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #D3D0CB;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #D3D0CB;
+  color: #2D2D2A;
+}
+
+ /* Dropdown Button */
+.dropbtn {
+  color: #D3D0CB;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #D3D0CB;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #2D2D2A;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #2D2D2A; color: #D3D0CB;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block; }
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #D3D0CB; color: #2D2D2A;} 
+
+/* Pretty buttons */
+body{ 
+    background:url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/wild_oliva.png);
+}
+.centered {
+  margin:50px auto;
+  text-align:center;
+}
+
+.button::-moz-focus-inner{
+  border: 0;
+  padding: 0;
+}
+
+.button{
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  padding: 6px 20px;
+  margin: 0;
+  cursor: pointer;
+  border: 1px solid #bbb;
+  overflow: visible;
+  font: bold 13px arial, helvetica, sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #555;
+  
+  background-color: #ddd;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), to(rgba(255,255,255,0)));
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+  background-image: -ms-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+  background-image: -o-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+  background-image: linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+  
+  -webkit-transition: background-color .2s ease-out;
+  -moz-transition: background-color .2s ease-out;
+  -ms-transition: background-color .2s ease-out;
+  -o-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out;
+  background-clip: padding-box; /* Fix bleeding */
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+  text-shadow: 0 1px 0 rgba(255,255,255, .9);
+  
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.button:hover{
+  background-color: #eee;
+  color: #555;
+}
+
+.button:active{
+  background: #e9e9e9;
+  position: relative;
+  top: 1px;
+  text-shadow: none;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+}
+
+.button[disabled], .button[disabled]:hover, .button[disabled]:active{
+  border-color: #eaeaea;
+  background: #fafafa;
+  cursor: default;
+  position: static;
+  color: #999;
+  /* Usually, !important should be avoided but here it's really needed :) */
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+/* Smaller buttons styles */
+
+.button.small{
+  padding: 2px 6px;
+}
+
+.button.med{
+  padding: 4px 12px;
+}
+
+/* Larger buttons styles */
+
+.button.large{
+  padding: 12px 20px;
+  text-transform: uppercase;
+}
+
+.button.large:active{
+  top: 2px;
+}
+
+/* Colored buttons styles */
+
+.button.green, .button.red, .button.blue .button.grey .button.yellow {
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0,0,0,.2);
+  
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.3)), to(rgba(255,255,255,0)));
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: -ms-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: -o-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+}
+
+/* */
+
+.button.green{
+  background-color: #306B34;
+  border-color: #2D2D2A;
+  color: #2D2D2A;
+}
+
+.button.green:hover{
+  background-color: #407A44;
+}
+
+.button.green:active{
+  background: #57a957;
+}
+
+/* */
+
+.button.red{
+  background-color: #AD332E;
+  border-color: #c43c35;
+  color: #D3D0CB;
+}
+
+.button.red:hover{
+  background-color: #ee5f5b;
+}
+
+.button.red:active{
+  background: #c43c35;
+}
+
+
+.button.grey{
+  background-color: #2D2D2A;
+  border-color: #2D2D2A;
+  color: #2D2D2A;
+}
+
+.button.grey:hover{
+  background-color: #3d585d;
+}
+
+.button.yellow{
+  background-color: #A8C256;
+  border-color: #2D2D2A;
+  color: #2D2D2A;
+}
+
+.button.yellow:hover{
+  background-color: #AFC85D;
+}
+/* */
+
+.button.blue{
+  background-color: #40798C;
+  border-color: #2D2D2A;
+  color: #2D2D2A;
+}
+
+.button.blue:hover{
+  background-color: #5D94A3;
+}
+
+.button.blue:active{
+  background: #269CE9;
+}
+
+/* */
+
+.green[disabled], .green[disabled]:hover, .green[disabled]:active{
+  border-color: #57A957;
+  background: #57A957;
+  color: #D2FFD2;
+}
+
+.red[disabled], .red[disabled]:hover, .red[disabled]:active{
+  border-color: #C43C35;
+  background: #C43C35;
+  color: #FFD3D3;
+}
+
+.blue[disabled], .blue[disabled]:hover, .blue[disabled]:active{
+  border-color: #269CE9;
+  background: #269CE9;
+  color: #93D5FF;
+}
+
+/* Group buttons */
+
+.button-group,
+.button-group li{
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+.button-group{
+  font-size: 0; /* Inline block elements gap - fix */
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, .1);
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  padding: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  min-width: 1024px;
+  overflow: auto;
+}
+
+.button-group li{
+  margin-right: -1px; /* Overlap each right button border */
+}
+
+.button-group .button{
+  font-size: 13px; /* Set the font size, different from inherited 0 */
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.button-group .button:active{
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset, -5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset, -5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset, -5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+}
+
+.button-group li:first-child .button{
+  -moz-border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+
+.button-group li:first-child .button:active{
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, -5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, -5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, -5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+}
+
+.button-group li:last-child .button{
+  -moz-border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.button-group li:last-child .button:active{
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+}
+
+ /* Popover */
+.popover {
+  border: 2px #D3D0CB;
+}
+
+/* Popover Header */
+.popover-title {
+  background-color: #2D2D2A;
+  color: #D3D0CB;
+  font-size: 16px;
+  text-align:center;
+}
+
+/* Popover Body */
+.popover-content {
+  background-color: #2D2D2A;
+  color: #D3D0CB;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Popover Arrow */
+.arrow {
+  border-right-color: red !important;
+}
+
+ /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #AD332E;
+  color: #D3D0CB;
+  cursor: pointer;
+  padding: 30px 30px;
+  width: 50%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+
+  text-shadow: 0 1px 0 rgba(0,0,0,.2);
+  
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.3)), to(rgba(255,255,255,0)));
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: -ms-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: -o-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+}
+
+
+.accordionIn {
+  background-color: #28464B;
+  color: #D3D0CB;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+
+  text-shadow: 0 1px 0 rgba(0,0,0,.2);
+  
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.3)), to(rgba(255,255,255,0)));
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: -ms-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: -o-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover, .accordionIn.hover {
+  background-color: #2D2D2A;
+  color: #AD332E;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: #D3D0CB;
+  max-height: 0;
+  overflow: hidden;
+  width: 50%;	
+  transition: max-height 0.2s ease-out;
+  text-align: center;
+
+}
+
+.panelIn {
+  padding: 0 18px;
+  background-color: #D3D0CB;
+  max-height: 0;
+  overflow: hidden;
+  width: 100%;	
+  transition: max-height 0.2s ease-out;
+
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Roboto, sans-serif;
+}
+
+.slider {
+  position: relative;
+  width: 720px;
+  height: 480px;
+  margin: 50px auto;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 100px;
+  text-align: center;
+  transform: translatex(-50%);
+  z-index: 1000;
+
+  list-style: none;
+  text-align: center;
+  background-color: #2D2D2A;
+  padding-top: 10px;
+}
+
+.slider input[type="radio"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider-controls label {
+  display: inline-block;
+  border: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #D3D0CB;
+  transition: background-color 0.2s linear;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"] {
+  background-color: #AD332E;
+}
+
+#btn-2:checked ~ .slider-controls label[for="btn-2"] {
+  background-color: #AD332E;
+}
+
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background-color: #AD332E;
+}
+
+/* SLIDES */
+
+.slides {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  transform: translatex(-100%);
+  transition: transform 250ms linear;
+  background-color: #2D2D2A;
+}
+
+.slide-content {
+  width: 720px;
+}
+
+.slide-title {
+  margin-bottom: -1px;
+  font-size: 36px;
+  color: #D3D0CB;
+  background-color: #2D2D2A
+}
+
+.slide-text {
+  margin-bottom: 20px;
+  color: #D3D0CB;
+  background-color: #2D2D2A;
+  font-size: 15px;
+  width: 35%;
+
+}
+
+.slide-link {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: #ff4081;
+}
+
+.slide-image img {
+  max-width: 100%;
+}
+
+/* Slide animations */
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  transform: translatex(0);
+  opacity: 1;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  transform: translatex(0);
+  opacity: 1;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  transform: translatex(0);
+  opacity: 1;
+}
+
+#btn-1:not(:checked) ~ .slides .slide:nth-child(1) {
+  animation-name: swap-out;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+}
+
+#btn-2:not(:checked) ~ .slides .slide:nth-child(2) {
+  animation-name: swap-out;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+}
+
+#btn-3:not(:checked) ~ .slides .slide:nth-child(3) {
+  animation-name: swap-out;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+}
+
+@keyframes swap-out {
+  0% {
+    transform: translatex(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translatex(50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translatex(100%);
+  }
+}
+
+#otlne{
+	color: white;
+	background-color: white;
+	font-size: 20px;
+	text-shadow: -1px 1px 0 #000,
+				  1px 1px 0 #000,
+				 1px -1px 0 #000;
+				-1px -1px 0 #000;
+}
+
+ /* The alert message box */
+.alert {
+
+  background-color: #F0C808; /* Red */
+  color: #2D2D2A;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+} 
