@@ -65,7 +65,7 @@ a, button{ display: inline-block; text-decoration: none; color: inherit; line-he
 
 a:focus, a:active, a:hover,
 button:focus, button:active, button:hover,
-a b.light-color:hover{ text-decoration: none; color: #FFA804; }
+a b.light-color:hover{ text-decoration: none; color: #AD332E; }
 
 b{ font-weight: 600; }
 
@@ -208,7 +208,7 @@ b.max-bold{ font-weight: 700; }
 
 .portfolio-section .portfolioFilter a{ margin: 10px 10px 0 0; }
 
-.portfolio-section .portfolioFilter a.current{ color: #FFA804; }
+.portfolio-section .portfolioFilter a.current{ color: #AD332E; }
 
 .portfolio-section .portfolioContainer{ margin-left: -15px; margin-right: -15px; }
 
@@ -397,6 +397,10 @@ body{
   padding: 2px 6px;
 }
 
+.button.med{
+  padding: 4px 12px;
+}
+
 /* Larger buttons styles */
 
 .button.large{
@@ -410,7 +414,7 @@ body{
 
 /* Colored buttons styles */
 
-.button.green, .button.red, .button.blue {
+.button.green, .button.red, .button.blue .button.grey .button.yellow {
   color: #fff;
   text-shadow: 0 1px 0 rgba(0,0,0,.2);
   
@@ -425,12 +429,13 @@ body{
 /* */
 
 .button.green{
-  background-color: #57a957;
-  border-color: #57a957;
+  background-color: #306B34;
+  border-color: #2D2D2A;
+  color: #2D2D2A;
 }
 
 .button.green:hover{
-  background-color: #62c462;
+  background-color: #407A44;
 }
 
 .button.green:active{
@@ -453,15 +458,36 @@ body{
   background: #c43c35;
 }
 
+
+.button.grey{
+  background-color: #2D2D2A;
+  border-color: #2D2D2A;
+  color: #2D2D2A;
+}
+
+.button.grey:hover{
+  background-color: #3d585d;
+}
+
+.button.yellow{
+  background-color: #A8C256;
+  border-color: #2D2D2A;
+  color: #2D2D2A;
+}
+
+.button.yellow:hover{
+  background-color: #AFC85D;
+}
 /* */
 
 .button.blue{
-  background-color: #269CE9;
-  border-color: #269CE9;
+  background-color: #40798C;
+  border-color: #2D2D2A;
+  color: #2D2D2A;
 }
 
 .button.blue:hover{
-  background-color: #70B9E8;
+  background-color: #5D94A3;
 }
 
 .button.blue:active{
@@ -580,27 +606,266 @@ body{
 
  /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: #AD332E;
+  color: #D3D0CB;
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
+  padding: 30px 30px;
+  width: 50%;
+  text-align: center;
   border: none;
   outline: none;
   transition: 0.4s;
+
+  text-shadow: 0 1px 0 rgba(0,0,0,.2);
+  
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.3)), to(rgba(255,255,255,0)));
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: -ms-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: -o-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
 }
 
+
+.accordionIn {
+  background-color: #28464B;
+  color: #D3D0CB;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+
+  text-shadow: 0 1px 0 rgba(0,0,0,.2);
+  
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.3)), to(rgba(255,255,255,0)));
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: -ms-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: -o-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+}
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #ccc;
+.active, .accordion:hover, .accordionIn.hover {
+  background-color: #2D2D2A;
+  color: #AD332E;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: #D3D0CB;
   max-height: 0;
   overflow: hidden;
+  width: 50%;	
   transition: max-height 0.2s ease-out;
+  text-align: center;
+
+}
+
+.panelIn {
+  padding: 0 18px;
+  background-color: #D3D0CB;
+  max-height: 0;
+  overflow: hidden;
+  width: 100%;	
+  transition: max-height 0.2s ease-out;
+
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Roboto, sans-serif;
+}
+
+.slider {
+  position: relative;
+  width: 720px;
+  height: 480px;
+  margin: 50px auto;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 100px;
+  text-align: center;
+  transform: translatex(-50%);
+  z-index: 1000;
+
+  list-style: none;
+  text-align: center;
+  background-color: #2D2D2A;
+  padding-top: 10px;
+}
+
+.slider input[type="radio"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider-controls label {
+  display: inline-block;
+  border: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #D3D0CB;
+  transition: background-color 0.2s linear;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"] {
+  background-color: #AD332E;
+}
+
+#btn-2:checked ~ .slider-controls label[for="btn-2"] {
+  background-color: #AD332E;
+}
+
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background-color: #AD332E;
+}
+
+/* SLIDES */
+
+.slides {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  transform: translatex(-100%);
+  transition: transform 250ms linear;
+  background-color: #2D2D2A;
+}
+
+.slide-content {
+  width: 720px;
+}
+
+.slide-title {
+  margin-bottom: -1px;
+  font-size: 36px;
+  color: #D3D0CB;
+  background-color: #2D2D2A
+}
+
+.slide-text {
+  margin-bottom: 20px;
+  color: #D3D0CB;
+  background-color: #2D2D2A;
+  font-size: 15px;
+  width: 35%;
+
+}
+
+.slide-link {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: #ff4081;
+}
+
+.slide-image img {
+  max-width: 100%;
+}
+
+/* Slide animations */
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  transform: translatex(0);
+  opacity: 1;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  transform: translatex(0);
+  opacity: 1;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  transform: translatex(0);
+  opacity: 1;
+}
+
+#btn-1:not(:checked) ~ .slides .slide:nth-child(1) {
+  animation-name: swap-out;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+}
+
+#btn-2:not(:checked) ~ .slides .slide:nth-child(2) {
+  animation-name: swap-out;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+}
+
+#btn-3:not(:checked) ~ .slides .slide:nth-child(3) {
+  animation-name: swap-out;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+}
+
+@keyframes swap-out {
+  0% {
+    transform: translatex(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translatex(50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translatex(100%);
+  }
+}
+
+#otlne{
+	color: white;
+	background-color: white;
+	font-size: 20px;
+	text-shadow: -1px 1px 0 #000,
+				  1px 1px 0 #000,
+				 1px -1px 0 #000;
+				-1px -1px 0 #000;
 }

@@ -3109,24 +3109,29 @@ input[type="button"].btn-block {
 
 .collapse {
   display: none;
+  width: 50%;
 }
 
 .collapse.show {
   display: block;
+  width: 50%;
 }
 
 tr.collapse.show {
   display: table-row;
+  width: 50%;
 }
 
 tbody.collapse.show {
   display: table-row-group;
+  width: 50%;
 }
 
 .collapsing {
   position: relative;
   height: 0;
   overflow: hidden;
+  width: 50%;
   -webkit-transition: height 0.35s ease;
   -o-transition: height 0.35s ease;
   transition: height 0.35s ease;
