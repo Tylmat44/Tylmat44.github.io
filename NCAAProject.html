@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Virtual Resume and Portfolio</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	
+	
+	<!-- Font -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
+	
+	<!-- Stylesheets -->
+	
+	<link href="common-css/bootstrap.css" rel="stylesheet">
+	
+	<link href="common-css/ionicons.css" rel="stylesheet">
+	
+	<link href="common-css/fluidbox.min.css" rel="stylesheet">
+	
+	<link href="02-cv-boxed/css/styles.css" rel="stylesheet">
+	
+	<link href="02-cv-boxed/css/responsive.css" rel="stylesheet">
+	
+</head>
+
+<body style="background-color: #D3D0CB">
+
+			<div class="topnav">
+				<a href="index.html"><li>Home</li></a>
+				<a href="#contact"><li>Contact</li></a>
+				<div class="dropdown">
+				  <button class="dropbtn"><li>Projects</li></button>
+				  <div class="dropdown-content">
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+				  </div>
+
+				</div> 
+		
+			</div>
+
+	<section class="intro-section">
+		<div class="container-fluid" style="padding-left: 10%; padding-right: 10%;">
+
+
+			
+			<br>
+			<br>
+		
+			<div class="intro">
+				<div class="row" style="margin-top: 0px">
+					<h3 class="font-eggshell" style="padding-right: 20px"><b>March Madness Machine Learning Project</b></h3>
+				</div><!-- row -->
+			</div><!-- intro -->
+		</div><!-- container -->
+	</section><!-- intro-section -->
+	
+
+	<!-- SCIPTS -->
+	
+	<script src="common-js/jquery-3.2.1.min.js"></script>
+	
+	<script src="common-js/tether.min.js"></script>
+	
+	<script src="common-js/bootstrap.js"></script>
+	
+	<script src="common-js/isotope.pkgd.min.js"></script>
+	
+	<script src="common-js/jquery.waypoints.min.js"></script>
+	
+	<script src="common-js/progressbar.min.js"></script>
+	
+	<script src="common-js/jquery.fluidbox.min.js"></script>
+	
+	<script src="common-js/scripts.js"></script>
+
+	<script>
+	$(function () {
+  		$('[data-toggle="popover"]').popover()
+	})
+	</script>
+
+	<script>
+	$('.popover-dismiss').popover({
+  	trigger: 'focus'
+	})
+	</script>
+
+	<script>
+		$(function () {
+  		$('.example-popover').popover({
+    container: 'body'
+  })
+})
+	</script>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<script>
+var acc = document.getElementsByClassName("accordionIn");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+	
+</body>
+</html>

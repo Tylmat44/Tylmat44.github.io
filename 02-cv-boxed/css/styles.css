@@ -414,7 +414,7 @@ body{
 
 /* Colored buttons styles */
 
-.button.green, .button.red, .button.blue .button.grey .button.yellow {
+.button.green, .button.red, .button.blue .button.yellow {
   color: #fff;
   text-shadow: 0 1px 0 rgba(0,0,0,.2);
   
@@ -429,17 +429,17 @@ body{
 /* */
 
 .button.green{
-  background-color: #306B34;
+  background-color: #2D2D2A;
   border-color: #2D2D2A;
-  color: #2D2D2A;
+  color: #D3D0CB;
 }
 
 .button.green:hover{
-  background-color: #407A44;
+  background-color: #3d585d;
 }
 
 .button.green:active{
-  background: #57a957;
+  background: #3d585d;
 }
 
 /* */
@@ -894,3 +894,12 @@ body {
 .closebtn:hover {
   color: black;
 } 
+
+<style type="text/css">
+.pseudolink { 
+   color:blue; 
+   text-decoration:underline; 
+   cursor:pointer; 
+   }
+</style>
+
