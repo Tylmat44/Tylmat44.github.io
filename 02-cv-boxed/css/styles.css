@@ -903,3 +903,26 @@ body {
    }
 </style>
 
+#datatable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#datatable td, #datatable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #d69996;
+}
+
+#datatable tr:nth-child(even){background-color: #cd8481;}
+
+#datatable tr:hover {background-color: #ddd;}
+
+#datatable th {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  text-align: left;
+  background-color: #AD332E;
+  color: #D3D0CB;
+}
