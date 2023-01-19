@@ -30,7 +30,7 @@
 			<div class="topnav">
 				<a href="\index.html"><li>Home</li></a>
 				<div class="dropdown">
-				  <button class="dropbtn"><li>Projects</li></button>
+				  <button class="dropbtn" onclick="window.location.href='projects.html';"><li>Projects</li></button>
 				  <div class="dropdown-content">
 					<a href="farmburgh.html">Farmburgh</a>
 					<a href="quotingtemplate.html">Excel Quoting Template</a>
@@ -153,19 +153,61 @@
 
 						<h3><b>Technical Skills</b></h3>
 						Click each skill to see projects that highlight that skill. <br><br><br>
-
-						<button class="small red button" data-toggle="popover" data-trigger="hover focus" data-placement="right" title="Expert Skill Level" data-content="I can perform almost all tasks effeciently in the given skill. A consiterable amount of time has been put into learning and practicing it. I am very comfortable when it comes to using this, no matter the sitation.">Expert</button>
-						<button class="small red button" data-toggle="popover" data-trigger="hover focus" data-placement="right" title="Advanced Skill Level" data-content="I have a very good knowledge when it comes to this skill and can perform many tasks. The stuff I do not know how to do will probably come with years of practice. I can comfortably use it but may have to stop every once in a while to think something out.">Advanced</button>
-						<button class="small red button" data-toggle="popover" data-trigger="hover focus" data-placement="right" title="Intermediate Skill Level" data-content="I have more than an entry level knowledge using this skill. The lack of higher level knowledge is due to the fact that I have not learned or used it enough. Some stuff I could look up easliy but other things may take more than that. It may take me a little longer to perform tasks, but I will improve the more I use it.">Intermediate</button>
 					</div>
 				</div><!-- col-sm-3 -->
 				
 				<div class="col-sm-12 col-md-9">
 					<div class="experience margin-b-50">
+
+						<button class="accordion"><h4><b>Programming</b></h4></button>
+						<div class="panel">
+							 <button class="accordionIn"><h6><b>Excel VBA - 1 Year - Professional</b></h6></button>
+							<div class="panelIn">
+							  <span class="pseudolink" onclick="window.open('quotingtemplate.html')">
+							  <button class="med red button">Excel Quoting Template</button>
+							  </span>
+							  
+							  <!--<button class="med red button">Project Name</button>
+							  <button class="med red button">Project Name</button>
+							  <button class="med red button">Project Name</button>-->
+							</div>
+							
+							<button class="accordionIn"><h6><b>Python - 4 Years - Hobbyist</b></h6></button>
+							<div class="panelIn">
+								<span class="pseudolink" onclick="window.open('NCAAProject.html')">
+									<button class="med red button">NCAA ML Project</button>
+									</span>
+							  <!--<button class="med red button">Project Name</button>
+							  <button class="med red button">Project Name</button>
+							  <button class="med red button">Project Name</button>
+							  <button class="med red button">Project Name</button>-->
+							</div>
+
+							<button class="accordionIn"><h6><b>C# - 2 Years - Hobbyist</b></h6></button>
+							<div class="panelIn">
+							  <span class="pseudolink" onclick="window.open('farmburgh.html')">
+							  <button class="med red button">Farmburgh</button>
+							  </span>
+							  <!--<button class="med red button">Project Name</button>
+							  <button class="med red button">Project Name</button>
+							  <button class="med red button">Project Name</button>-->
+							</div>
+
+							<button class="accordionIn"><h6><b>MySql/SQLite - 1 Year - Hobbyist</b></h6></button>
+							<div class="panelIn" style="overflow: visible;">
+								<span class="pseudolink" onclick="window.open('farmburgh.html')">
+									<button class="med red button">Farmburgh</button>
+									</span>
+							  <!--<button class="med red button">Project Name</button>
+							  <button class="med red button">Project Name</button>
+							  <button class="med red button">Project Name</button>
+							  <button class="med red button">Project Name</button>-->
+							</div>
+						</div>
 						
 						<button class="accordion"><h4><b>Statistical</b></h4></button>
 						<div class="panel">
-							 <button class="accordionIn"><h6><b>Linear Regression (A)</b></h6></button>
+							 <button class="accordionIn"><h6><b>Linear Regression - 2 Years - Academic</b></h6></button>
 							<div class="panelIn">
 							  <!--<button class="med red button">Project Name</button>
 							  <button class="med red button">Project Name</button>
@@ -173,7 +215,7 @@
 							  <button class="med red button">Project Name</button>-->
 							</div>
 
-							<button class="accordionIn"><h6><b>Data Analysis (A)</b></h6></button>
+							<button class="accordionIn"><h6><b>Data Analysis - 2 Years - Academic</b></h6></button>
 							<div class="panelIn">
 							  <!--<button class="med red button">Project Name</button>
 							  <button class="med red button">Project Name</button>
@@ -181,7 +223,7 @@
 							  <button class="med red button">Project Name</button>-->
 							</div>
 
-							<button class="accordionIn"><h6><b>Data Cleaning and Manipulation (A)</b></h6></button>
+							<button class="accordionIn"><h6><b>Data Cleaning- 3 Years - Hobbyist</b></h6></button>
 							<div class="panelIn">
 							  <span class="pseudolink" onclick="window.open('NCAAProject.html')">
 							  <button class="med red button">NCAA ML Project</button>
@@ -191,60 +233,41 @@
 							  <button class="med red button">Project Name</button>-->
 							</div>
 
-							<button class="accordionIn"><h6><b>Machine Learning (I)</b></h6></button>
+							<button class="accordionIn"><h6><b>Machine Learning - 1 Year - Hobbyist</b></h6></button>
 							<div class="panelIn" style="overflow: visible;">
 							  <span class="pseudolink" onclick="window.open('NCAAProject.html')">
 							  <button class="med red button">NCAA ML Project</button>
-							  </span>
-							  <span class="pseudolink" onclick="window.open('PokemonML.html')">
-							  <button class="med red button">Pokemon Battle AI</button>
 							  </span>
 							  <!--<button class="med red button">Project Name</button>
 							  <button class="med red button">Project Name</button>-->
 							</div>
 						</div>
 
-						<button class="accordion"><h4><b>Programming</b></h4></button>
+						<button class="accordion"><h4><b>Software</b></h4></button>
 						<div class="panel">
-							 <button class="accordionIn"><h6><b>Python (A)</b></h6></button>
+							 <button class="accordionIn"><h6><b>Microsoft Excel - 2 Years - Professional</b></h6></button>
 							<div class="panelIn">
-							  <span class="pseudolink" onclick="window.open('NCAAProject.html')">
-							  <button class="med red button">Pokemon Battle AI</button>
+							  <span class="pseudolink" onclick="window.open('quotingtemplate.html')">
+							  <button class="med red button">Excel Quoting Template</button>
 							  </span>
 							  <!--<button class="med red button">Project Name</button>
 							  <button class="med red button">Project Name</button>
 							  <button class="med red button">Project Name</button>-->
 							</div>
 
-							<button class="accordionIn"><h6><b>Java (A)</b></h6></button>
+							<button class="accordionIn"><h6><b>Unity - 2 Years - Hobbyist</b></h6></button>
 							<div class="panelIn">
+								<span class="pseudolink" onclick="window.open('farmburgh.html')">
+									<button class="med red button">Farmburgh</button>
+									</span>
 							  <!--<button class="med red button">Project Name</button>
 							  <button class="med red button">Project Name</button>
 							  <button class="med red button">Project Name</button>
 							  <button class="med red button">Project Name</button>-->
 							</div>
 
-							<button class="accordionIn"><h6><b>SAS and R (I)</b></h6></button>
+							<button class="accordionIn"><h6><b>Unreal Engine - 6 Months - Hobbyist</b></h6></button>
 							<div class="panelIn">
-							  <span class="pseudolink" onclick="window.open('PokemonML.html')">
-							  <button class="med red button">NCAA ML Project</button>
-							  </span>
-							  <!--<button class="med red button">Project Name</button>
-							  <button class="med red button">Project Name</button>
-							  <button class="med red button">Project Name</button>-->
-							</div>
-
-							<button class="accordionIn"><h6><b>SQL (I)</b></h6></button>
-							<div class="panelIn" style="overflow: visible;">
-							  <!--<button class="med red button">Project Name</button>
-							  <button class="med red button">Project Name</button>
-							  <button class="med red button">Project Name</button>
-							  <button class="med red button">Project Name</button>-->
-							</div>
-							
-							
-							<button class="accordionIn"><h6><b>VBA (I)</b></h6></button>
-							<div class="panelIn" style="overflow: visible;">
 							  <!--<button class="med red button">Project Name</button>
 							  <button class="med red button">Project Name</button>
 							  <button class="med red button">Project Name</button>
@@ -254,41 +277,14 @@
 
 						<button class="accordion"><h4><b>General</b></h4></button>
 						<div class="panel">
-							 <button class="accordionIn"><h6><b>Microsoft Excel (E)</b></h6></button>
-							<div class="panelIn">
-							  <span class="pseudolink" onclick="window.open('NCAAProject.html')">
-							  <button class="med red button">NCAA ML Project</button>
-							  </span>
-							  <!--<button class="med red button">Project Name</button>
-							  <button class="med red button">Project Name</button>
-							  <button class="med red button">Project Name</button>-->
-							</div>
+							 <button class="accordionIn"><h6><b>Expert at Googling</b></h6></button>
 
-							<button class="accordionIn"><h6><b>Adaptability (A)</b></h6></button>
-							<div class="panelIn">
-							  <!--<button class="med red button">Project Name</button>
-							  <button class="med red button">Project Name</button>
-							  <button class="med red button">Project Name</button>
-							  <button class="med red button">Project Name</button>-->
-							</div>
+							<button class="accordionIn"><h6><b>Adaptability</b></h6></button>
 
-							<button class="accordionIn"><h6><b>Quick Learner/Willingness to Learn (A)</b></h6></button>
-							<div class="panelIn">
-							  <!--<button class="med red button">Project Name</button>
-							  <button class="med red button">Project Name</button>
-							  <button class="med red button">Project Name</button>
-							  <button class="med red button">Project Name</button>-->
-							</div>
+							<button class="accordionIn"><h6><b>Quick Learner/Willingness to Learn</b></h6></button>
 
-							<button class="accordionIn"><h6><b>Problem Solving (A)</b></h6></button>
-							<div class="panelIn" style="overflow: visible;">
-							  <span class="pseudolink" onclick="window.open('PokemonML.html')">
-							  <button class="med red button">Pokemon Battle AI</button>
-							  </span>
-							  <!--<button class="med red button">Project Name</button>
-							  <button class="med red button">Project Name</button>
-							  <button class="med red button">Project Name</button>-->
-							</div>
+							<button class="accordionIn"><h6><b>Problem Solving</b></h6></button>
+
 						</div>
 
 
@@ -314,7 +310,7 @@
 				
 				<div class="col-sm-12 col-md-9">
 					<div class="experience margin-b-50">
-			<h4><b>Estimator</b></h4>
+			<h4><b>Senior Estimator</b></h4>
                         <h5 class="font-red"><b>Evercast</b></h5>
 			<h6 class="font-lite-black margin-t-10">June 2021 - Present</h6>
 			<p class="margin-tb-30"></p>
@@ -373,7 +369,7 @@
 					    <li class="slide">
 					      <div class="slide-content" style="background-image: url(band.jpg)">
 					        <h2 class="slide-title">Music</h2>
-					        <p class="slide-text">Music is my one true escape from technology. I have been playing trumpet for almost 10 years. I've been a part of marching band throughout high school and college as well was many symphonic bands, pep bands and wind ensembles over the years. I just finished up my fourth season of being in the NC State Power Sound of the South marching band which has been one of the greatest experiences of my life. Since I recently graduated, I hope to continue my music career at church and possibly even community ensembles.</p>
+					        <p class="slide-text">Music is my one true escape from technology. I have been playing trumpet for almost 12 years. I've been a part of marching band throughout high school and college as well was many symphonic bands, pep bands and wind ensembles over the years. I marched for four seasons in the NC State Power Sound of the South marching band which has been one of the greatest experiences of my life. Since I've graduated, I hope to continue my music career with community ensembles. I've even composed some music for my game!</p>
 					     
 					      </div>
 					      <p class="slide-image" >
@@ -383,7 +379,7 @@
 					    <li class="slide">
 					      <div class="slide-content" style="background-image: url(ac.png)">
 					        <h2 class="slide-title">Gaming</h2>
-					        <p class="slide-text" style="font-size: 12px">Like a lot of people, I enjoy playing video games whenever I get the chance to. It is a way for me to escape the stresses of everyday for a little while. I can honestly say that I probably wouldn't be where I am today without video games. Many years ago, video games sparked my interest in computers. Particularly, wanting to make a game for myself. While I haven't fully completed building a game yet, it got me into programming. Also, my first use of a spreadsheet can be credited to a video game long ago. I've used them to track my progress or come up with the best strategies using formulas and algorithms. Now with my current knowledge, I can model in game stock markets, figure the probabilities of certain item drops and even make some games "play" themselves using machine learning. Gaming has been a long time hobby of mine, but it has opened important doors in my life.</p>
+					        <p class="slide-text" style="font-size: 12.2px">Like a lot of people, I enjoy playing video games whenever I get the chance to. It is a way for me to escape the stresses of everyday for a little while. I can honestly say that I probably wouldn't be where I am today without video games. Many years ago, video games sparked my interest in computers. Particularly, wanting to make a game for myself, which I've recently accomplished. Also, my first use of a spreadsheet can be credited to a video game long ago. I've used them to track my progress or come up with the best strategies using formulas and algorithms. Now with my current knowledge, I can model in game stock markets, figure the probabilities of certain item drops and even make some games "play" themselves using machine learning. Gaming has been a long time hobby of mine, but it has opened important doors in my life.</p>
 					       
 					      </div>
 					      <p class="slide-image">
@@ -406,11 +402,6 @@
 	</section><!-- experience-section -->
 	<a/>
 	
-	
-<h2>Modal Example</h2>
-
-<!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -418,10 +409,16 @@
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+	<div class="modal-body">
+		<h3><b>Check out my projects page!</b></h3>
+		<br>
+		<br>
+		<div><button class="large green button" onclick="window.location.href='projects.html';"><b>Projects</b></button></div>
+	</div>
   </div>
 
 </div>
+
 	<footer>
 		<p class="copyright">
 			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -508,14 +505,12 @@ for (i = 0; i < acc.length; i++) {
 // Get the modal
 var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
+
+window.onload = function() {
   modal.style.display = "block";
 }
 
@@ -530,7 +525,11 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
 </script>
+
+
 	
 </body>
 </html>

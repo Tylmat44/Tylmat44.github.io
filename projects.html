@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Virtual Resume and Portfolio</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	
+	
+	<!-- Font -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
+	
+	<!-- Stylesheets -->
+	
+	<link href="common-css/bootstrap.css" rel="stylesheet">
+	
+	<link href="common-css/ionicons.css" rel="stylesheet">
+	
+	<link href="common-css/fluidbox.min.css" rel="stylesheet">
+	
+	<link href="02-cv-boxed/css/styles.css" rel="stylesheet">
+	
+	<link href="02-cv-boxed/css/responsive.css" rel="stylesheet">
+	
+</head>
+<style>#datatable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#datatable td, #datatable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #d69996;
+}
+
+#datatable tr:nth-child(even){background-color: #cd8481;}
+
+#datatable tr:hover {background-color: #ddd;}
+
+#datatable th {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  text-align: left;
+  background-color: #AD332E;
+  color: #D3D0CB;
+}</style>
+
+<body style="background-color: #D3D0CB">
+
+  <div class="topnav">
+    <a href="index.html"><li>Home</li></a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="window.location.href='projects.html';"><li>Projects</li></button>
+      <div class="dropdown-content">
+      <a href="farmburgh.html">Farmburgh</a>
+      <a href="quotingtemplate.html">Excel Quoting Template</a>
+      <a href="NCAAProject.html">NCAA ML Project</a>
+      </div>
+
+    </div> 
+
+  </div>
+
+	<section class="intro-section">
+		<div class="container-fluid" style="padding-left: 10%; padding-right: 10%;">
+
+
+			
+			<br>
+			<br>
+		
+			<div class="intro">
+				<div class="row" style="margin-top: 0px">
+					<h3 class="font-eggshell" style="padding-right: 0px; text-align: center;"><b>Below is a collection of projects I’ve worked on professionally, academically or even just in my free time. This page gives a brief description of each project. Visit the associated page to see more details.</b></h3>
+				</div><!-- row -->      
+			</div><!-- intro -->
+		</div><!-- container -->
+	</section><!-- intro-section -->
+
+	<br>
+	<br>
+
+		<div class="container-fluid" style="padding-left: 5%;">
+            <div class="row">
+            <div class="col-sm-6">
+            <h2>Farmburgh - Solo Game Dev</h2>
+            <hr>
+            </div>
+            </div>
+			<div class="row">
+                    <div class="col-sm-6" style="padding-left: 1.5%;">
+					<p style="font-size: 20px;">Farmburgh is a point-and-click farming simulator that I independently developed and released on Steam. Prior to Farmburgh, I had played around in Unity and Unreal, creating simple prototypes and learning what I could. I felt that it was time to actually develop a game from start to finish in order to get a small taste of the industry. Farmburgh was developed in Unity using C# and all of the programming and game design was done by me. I quite enjoyed this process, especially coming up with creative features and overcoming difficult problems. Check out the project page to view some code samples, screenshots and where I plan to take the game next.</p>
+          <br>
+          <br>
+          <div><button class="large green button" onclick="window.location.href='farmburgh.html';"><b>Farmburgh Project Page</b></button></div>            
+        </div>
+                    
+                    
+                    <div class="col-sm-6" style="padding-left: 10%;">
+                      <img src="Images/store_capsule_main.png">
+                    </div>
+
+
+			</div>
+			<br>
+            <br>
+            <div class="row">
+            <div class="col-sm-6">
+            <h2>Excel Quoting Template</h2>
+            <hr>
+            </div>
+            </div>
+            <div class="row">
+                    <div class="col-sm-6" style="padding-left: 1.5%;">
+                    <p style="font-size: 20px;">Not long after starting as an estimator, I quickly got fed up of how tedious it was to enter pertinent information into the old version of the quoting spreadsheet. After implementing just a few table lookups, I had managed to speed up my quoting efficiency drastically. My boss soon noticed an was thrilled. Together with my managers and the other estimators, I was able to create a whole new template in Excel, using lookups, VBA and UDF’s, to meet our needs. This had us quoting up around 100 jobs per week, up from an average of 60, in less time than it would take to quote that 60. Check out the link below to view some of the VBA code that went into this template as well as an example of the template itself (prices randomized to maintain company secrecy).</p>
+                    <br>
+                    <br>
+                    <div><button class="large green button" onclick="window.location.href='projects.html';"><b>Excel Quoting Template</b></button></div>
+                    </div>
+                    <div class="col-sm-6" style="padding-left: 10%;">
+                      <img src="Images/excel_example.png">
+                    </div>
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+            <div class="col-sm-6">
+            <h2>March Madness Machine Learning Project</h2>
+            <hr>
+            </div>
+            </div>
+            <div class="row">
+                    <div class="col-sm-6" style="padding-left: 1.5%;">
+                    <p style="font-size: 20px;">This project uses logistic regression, K-nn and SVM classifications in order to predict first-round March Madness game winners. This was done as the final project for ST 442: Intro to Data Science. The data was scraped using Python and data cleaning and analysis was done in R. The project page below highlights the important information from the paper. There is also a link for the Github repo where the R code and data used can be found.  All the technical jargon can be found in the report itself. Project will be revisited and revised when I get the opportunity.</p>
+                    
+                    <br>
+                    <br>
+                    <div><button class="large green button" onclick="window.location.href='NCAAProject.html';"><b>NCAA ML Project Page</b></button></div>        
+                  
+                  </div>
+
+                    <div class="col-sm-6" style="padding-left: 10%;">
+                      <img src="Images/basketball.jpg">
+                    </div>
+
+
+            </div>
+		</div>
+        <br>
+        <br>
+
+	
+
+	<!-- SCIPTS -->
+	
+	<script src="common-js/jquery-3.2.1.min.js"></script>
+	
+	<script src="common-js/tether.min.js"></script>
+	
+	<script src="common-js/bootstrap.js"></script>
+	
+	<script src="common-js/isotope.pkgd.min.js"></script>
+	
+	<script src="common-js/jquery.waypoints.min.js"></script>
+	
+	<script src="common-js/progressbar.min.js"></script>
+	
+	<script src="common-js/jquery.fluidbox.min.js"></script>
+	
+	<script src="common-js/scripts.js"></script>
+
+	<script>
+	$(function () {
+  		$('[data-toggle="popover"]').popover()
+	})
+	</script>
+
+	<script>
+	$('.popover-dismiss').popover({
+  	trigger: 'focus'
+	})
+	</script>
+
+	<script>
+		$(function () {
+  		$('.example-popover').popover({
+    container: 'body'
+  })
+})
+	</script>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<script>
+var acc = document.getElementsByClassName("accordionIn");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Virtual Resume and Portfolio</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	
+	
+	<!-- Font -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
+	
+	<!-- Stylesheets -->
+	
+	<link href="common-css/bootstrap.css" rel="stylesheet">
+	
+	<link href="common-css/ionicons.css" rel="stylesheet">
+	
+	<link href="common-css/fluidbox.min.css" rel="stylesheet">
+	
+	<link href="02-cv-boxed/css/styles.css" rel="stylesheet">
+	
+	<link href="02-cv-boxed/css/responsive.css" rel="stylesheet">
+	
+</head>
+<style>#datatable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#datatable td, #datatable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #d69996;
+}
+
+#datatable tr:nth-child(even){background-color: #cd8481;}
+
+#datatable tr:hover {background-color: #ddd;}
+
+#datatable th {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  text-align: left;
+  background-color: #AD332E;
+  color: #D3D0CB;
+}</style>
+
+<body style="background-color: #D3D0CB">
+
+  <div class="topnav">
+    <a href="\index.html"><li>Home</li></a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="window.location.href='projects.html';"><li>Projects</li></button>
+      <div class="dropdown-content">
+      <a href="farmburgh.html">Farmburgh</a>
+      <a href="quotingtemplate.html">Excel Quoting Template</a>
+      <a href="NCAAProject.html">NCAA ML Project</a>
+      </div>
+
+    </div> 
+
+  </div>
+
+	<section class="intro-section">
+		<div class="container-fluid" style="padding-left: 10%; padding-right: 10%;">
+
+
+			
+			<br>
+			<br>
+		
+			<div class="intro">
+				<div class="row" style="margin-top: 0px">
+                <div class="col-sm-6" style="padding-left: 5%; text-align: center; margin-top: 50px;">
+					<h3 class="font-eggshell" style="padding-right: 20px; font-size: 40px;"><b>Farmburgh</b></h3>
+          <h3 class="font-eggshell" style="padding-right: 20px; font-size: 25px;"><b>Indie Game</b></h3>
+          <br>
+                </div>
+					<div class="col-sm" style="padding-left: 5%;">
+						<p class="font-eggshell" style="text-align: center; font-size: 20px;">Farmburgh is a point-and-click farming simulator that I independently developed and released on Steam. Prior to Farmburgh, I had played around in Unity and Unreal, creating simple prototypes and learning what I could. I felt that it was time to actually develop a game from start to finish in order to get a small taste of the industry. Farmburgh was developed in Unity using C# and all of the programming and game design was done by me. I quite enjoyed this process, especially coming up with creative features and overcoming difficult problems.
+						</p>
+					</div>
+				</div><!-- row -->
+			<div class="row">
+                     <div class="col-sm-6" style="padding-left: 3%; text-align: center;">
+					<span class="pseudolink" onclick="window.open('https://store.steampowered.com/app/2270410/Farmburgh')">
+						<button class="med green button">Stream Page</button>
+					</span>
+
+					<span class="pseudolink" onclick="window.open('https://github.com/Tylmat44/FarmburghCodeExamples')" style="padding-left: 10px;">
+						<button class="med green button">Github Repo</button>
+					</span>
+                    </div>
+
+			</div>           
+			</div><!-- intro -->
+		</div><!-- container -->
+	</section><!-- intro-section -->
+
+	<br>
+	<br>
+
+		<div class="container-fluid" style="padding-left: 5%;">
+            <div class="row">
+            <div class="col-sm-6">
+            <h2>Why did I create Farmburgh?</h2>
+            <hr>
+            </div>
+            </div>
+			<div class="row">
+                    <div class="col-sm-6" style="padding-left: 1.5%; font-size: 20px;">
+					<p>Recently, I have been wanting to start a career in software development or game development. While my minor in college as computer science and my major of statistics had of programming in it, there really wasn’t anything about me that stands out in the sea of engineers. So, I developed Farmburgh in order to get an edge in the field (if you’re reading this, it obviously worked!) and to hone up some of my skills so that I can manage in an actual job. Not only that, but I am really passionate about video games. It has always been my dream to make a video game and I cannot believe I’ve finally been able to release one.</p>
+                    </div>
+
+                    
+                    <div class="col-sm-6" style="padding-left: 10%;">
+                      <img src="Images/store_capsule_main.png">
+                    </div>
+
+
+			</div>
+			<br>
+            <br>
+            <div class="row">
+            <div class="col-sm-6">
+            <h2>How it works.</h2>
+            <hr>
+            </div>
+            </div>
+            <div class="row">
+                    <div class="col-sm-6" style="padding-left: 1.5%; font-size: 20px;">
+                    <p>Farmburgh’s core gameplay revolves a tile based grid. Each tile is it’s own GameObject and stores it’s own location and whether or not it contains an object. When and object such as and animal or building is placed, the tile that is selected will calculate what other tiles will be needed for that object using an algorithm. a TileManager is also being used to save and load tile data as well as making sure the tiles follow the rules.
+
+                      There are various objects that are able to be placed on the farm such as crops, animals, buildings and decorations. Each of these objects has it’s own class derived from a “TileableObject” class. They also have different things they are able to do once placed. Crops have a set time in which they grow and can be harvest while buildings are able to store crafting stations to craft various goods.
+                      
+                      Saving and loading player and game data was a big focus for me on this game. On the prototypes of different games I have tinkered with in the past, I have always hard-coded game data right into the scripts and I’ve never attempted to save player data. From the get-go, I wanted to attempt to do something right. After a few attempts at raw CSV files and JSON, I decide to go with SQLite. I knew a bit of SQL from my time as a stat major in college and I wanted to hone up those skills to use as a career option, so this was the perfect choice. I created the game data in an SQL editor outside of the game, such as crop names, growth times, etc. I then created a DataManager class as a singleton class and created a bunch of dictionaries to store the loaded data once the game started, for quick and easy access. The player’s save data also saves onto a local SQLite database using it’s own manager classes.
+                      
+                      You can check out some of these classes on the Github repo.</p>                    </div>
+
+
+                      <div class="col-sm-6" style="padding-left: 10%;">
+                        <img src="Images/Screenshot1.png">
+                        <br>
+                        <br>
+                        <img src="Images/Screenshot2.png">
+                      </div>
+            </div>
+            <br>
+            <br>
+
+		</div>
+        <br>
+        <br>
+
+	
+
+	<!-- SCIPTS -->
+	
+	<script src="common-js/jquery-3.2.1.min.js"></script>
+	
+	<script src="common-js/tether.min.js"></script>
+	
+	<script src="common-js/bootstrap.js"></script>
+	
+	<script src="common-js/isotope.pkgd.min.js"></script>
+	
+	<script src="common-js/jquery.waypoints.min.js"></script>
+	
+	<script src="common-js/progressbar.min.js"></script>
+	
+	<script src="common-js/jquery.fluidbox.min.js"></script>
+	
+	<script src="common-js/scripts.js"></script>
+
+	<script>
+	$(function () {
+  		$('[data-toggle="popover"]').popover()
+	})
+	</script>
+
+	<script>
+	$('.popover-dismiss').popover({
+  	trigger: 'focus'
+	})
+	</script>
+
+	<script>
+		$(function () {
+  		$('.example-popover').popover({
+    container: 'body'
+  })
+})
+	</script>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<script>
+var acc = document.getElementsByClassName("accordionIn");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+	
+</body>
+</html>

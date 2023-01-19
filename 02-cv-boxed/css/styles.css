@@ -951,7 +951,7 @@ hr.style-eight:after {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 250px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -964,11 +964,12 @@ hr.style-eight:after {
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: #28464B;
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 80%;
+  width: 28%;
+  height: 28%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -1008,7 +1009,11 @@ hr.style-eight:after {
   color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+  padding: 2px 16px;
+  text-align: center;
+  color: #D3D0CB;
+}
 
 .modal-footer {
   padding: 2px 16px;

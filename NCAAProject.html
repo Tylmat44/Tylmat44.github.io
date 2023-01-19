@@ -50,20 +50,19 @@
 
 <body style="background-color: #D3D0CB">
 
-			<div class="topnav">
-				<a href="index.html"><li>Home</li></a>
-				<a href="#contact"><li>Contact</li></a>
-				<div class="dropdown">
-				  <button class="dropbtn"><li>Projects</li></button>
-				  <div class="dropdown-content">
-					<a href="#">Link 1</a>
-					<a href="#">Link 2</a>
-					<a href="#">Link 3</a>
-				  </div>
+  <div class="topnav">
+    <a href="\index.html"><li>Home</li></a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="window.location.href='projects.html';"><li>Projects</li></button>
+      <div class="dropdown-content">
+      <a href="farmburgh.html">Farmburgh</a>
+      <a href="quotingtemplate.html">Excel Quoting Template</a>
+      <a href="NCAAProject.html">NCAA ML Project</a>
+      </div>
 
-				</div> 
-		
-			</div>
+    </div> 
+
+  </div>
 
 	<section class="intro-section">
 		<div class="container-fluid" style="padding-left: 10%; padding-right: 10%;">
@@ -126,8 +125,8 @@
             </div>
             <div class="row">
                     <div class="col-sm-6" style="padding-left: 1.5%;">
-                    <p>The data for training the models comes from <a href="https://www.sports-reference.com/cbb/">Sports-Reference</a>. I obtained one table for each season since 1991 where every row contained certain statistics for each team that year. In order to shape this for training datasets, I had to get the first round tournament matchups and outcomes for each season. A left join was performed using the matchup data and the full season data so that the stats for each team matched the ones in the matchup. To reduce the amount of features for each model, I subtracted each respective stat of the high seed by the same of the low seed. I then decided the output would be binary, 1 for the high seed winning the game and 0 for the low seed. For the training data, 75% of the data from seasons 1991-2018 were used for training, and the other 25% was used for testing for accuraccy. The 2019 season was used at the end for a final "real" test.</p>
-                    <p>Next came the machine learning method selection. I had to choose methods that are good for binary classification and each of the ones chosen reflect this. First, I selected logistic regression since it seemed simpliest to setup and I had dealt with linear regression a lot and the variable selection methods were similar. Next, I chose to use K-nn becuase none of my data was categorical in nature so they could be graphed (on a 30-dimensional plane that is) and possibly grouped based on their location. Finally I chose SVM for similar reasons as well as the fact that the data may be linear, and K-nn is only for non-linear datapoints.</p>
+                    <p>The data for training the models comes from <a href="https://www.sports-reference.com/cbb/">Sports-Reference</a>. I obtained one table for each season since 1991 where every row contained certain statistics for each team that year. In order to shape this for training datasets, I had to get the first round tournament matchups and outcomes for each season. A left join was performed using the matchup data and the full season data so that the stats for each team matched the ones in the matchup. To reduce the amount of features for each model, I subtracted each respective stat of the high seed by the same of the low seed. I then decided the output would be binary, 1 for the high seed winning the game and 0 for the low seed. For the training data, 75% of the data from seasons 1991-2018 were used for training, and the other 25% was used for testing for accuracy. The 2019 season was used at the end for a final "real" test.</p>
+                    <p>Next came the machine learning method selection. I had to choose methods that are good for binary classification and each of the ones chosen reflect this. First, I selected logistic regression since it seemed simplest to setup and I had dealt with linear regression a lot and the variable selection methods were similar. Next, I chose to use K-nn because none of my data was categorical in nature so they could be graphed (on a 30-dimensional plane that is) and possibly grouped based on their location. Finally I chose SVM for similar reasons as well as the fact that the data may be linear, and K-nn is only for non-linear data points.</p>
                     </div>
 
 
@@ -146,13 +145,13 @@
                     <p>Three models were created using logistic regression. One model contained all the features in the dataset while two reduced models were created by variable selection techniques. "Model 2" is a reduced version of "Model 1." The fitness of the model was determined by using the AIC and by calculating the accuracy by adding the true positive and false positive numbers divided by the total number of observations. These are found on the table on the right. The probability threshold in the table is just a tuning parameter. Only one model was chosen for the final test> I chose "Model 2" since it had the lowest AIC and the accuracies were similar.</p>
                     <br>
                     <h4>K-NN</h4>
-                    <p>Only two models were created for K-NN. The first was created using all the variables in the dataset while the second used only the variables contained in the final logistic model. I chose to do this becuase I did not know many variable selection techniques other than trial and error and I only had a limited amount of time for this project. The other optimization was the K value, which I wrote a function to automize that. The model was trained and the accuracy and correct upset rate was calcuated and recorded on the table. Both models have the same accuracy but the correct upset rate was higher on the reduced model so that one was chosen.</p>
+                    <p>Only two models were created for K-NN. The first was created using all the variables in the dataset while the second used only the variables contained in the final logistic model. I chose to do this because I did not know many variable selection techniques other than trial and error and I only had a limited amount of time for this project. The other optimization was the K value, which I wrote a function to automatize that. The model was trained and the accuracy and correct upset rate was calculated and recorded on the table. Both models have the same accuracy but the correct upset rate was higher on the reduced model so that one was chosen.</p>
                     <br>
                     <h4>SVM</h4>
                     <p>Just like K-NN, I made two models using the SVM classifier, again with a full model and the reduced model. This one was a bit tricky to optimize since we didn't do much with it in class, and again, I didn't have tons of time to complete it. I fine tuned the probability threshold just like logistic regression. I then recorded the accuracy and correct upset rate. The full model was slightly better than the reduced one so I stuck with that one in the end.</p>
                     <br>
                     <h4>Final Testing</h4>
-                    <p>I decided to wrap the project up by applying the models to a fun "real life" tournament sitatuin. I used the 2019 tournament data since it was the most recent at the time of the project. Along with the three models selected from the three training methods, I decided to add the "high seed predictor" as well, using it as my basaeline. While all the models didn't perform how I would have liked them to, they all did better than just picking the high seed. I was very surprised to see that the logistic model did the best out of all of them since it was the simplist. Overall, I am pleased with the results since they performed better than my baseline.</p>
+                    <p>I decided to wrap the project up by applying the models to a fun "real life" tournament situation. I used the 2019 tournament data since it was the most recent at the time of the project. Along with the three models selected from the three training methods, I decided to add the "high seed predictor" as well, using it as my baseline. While all the models didn't perform how I would have liked them to, they all did better than just picking the high seed. I was very surprised to see that the logistic model did the best out of all of them since it was the simplest. Overall, I am pleased with the results since they performed better than my baseline.</p>
                     </div>
 
                     <div class="col-sm-6" style="padding-left: 10%;">
@@ -288,7 +287,7 @@
             <div class="row">
                     <div class="col-sm-6" style="padding-left: 1.5%;">
                     <p>So obviously, the final models didn't perform as well in the final test as it did in the training data. There are probably many reasons for that. First, I am not an expert at machine learning having only doing it for a semester. I've learned a lot while doing the project and since then. I was unfamiliar with the variable selection in K-NN and SVM as well as the tuning parameters for SVM. Even the methods of machine learning could have been wrong for the type of problem I was trying to solve.</p>
-                    <p>As for what I'd do different next time, there are tons of things. First, I would probably use Python rather than R. I know R is dedicated to statistics but Python has some really powerful and effecient machine learning libraries. I would also try using different methods of modeling on the data. Specifically nueral networks since I am big into that at the moment. This project could really need a revisit in the near future to acutally due it justice, which I plan on doing soon.</p>
+                    <p>As for what I'd do different next time, there are tons of things. First, I would probably use Python rather than R. I know R is dedicated to statistics but Python has some really powerful and efficient machine learning libraries. I would also try using different methods of modeling on the data. Specifically neural networks since I am big into that at the moment. This project could really need a revisit in the near future to actually due it justice, which I plan on doing soon.</p>
                     </div>
 
 
